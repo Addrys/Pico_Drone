@@ -14,6 +14,7 @@
 
 static int addr = 0x68;
 int write_block,read_block = 0;
+volatile float* ang_x, *ang_y;
 
 static void mpu6050_reset() {
     // Two byte reset. First byte register, second byte data
@@ -175,7 +176,9 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp) {
 }
 
 
-void mpu_init() {
+void mpu_init(float *ang_x_referencia, float *ang_y_referencia) {
+    
+    printf("Direccion ANG_X en INIT : %p \n",(void*)ang_x_referencia);
     stdio_init_all();
     //gpio_init(15);
     //gpio_set_dir(15, GPIO_OUT);
@@ -201,9 +204,11 @@ void mpu_init() {
 
     mpu6050_reset();
 #endif
+    ang_x = ang_x_referencia;
+    ang_y = ang_y_referencia;
 }
-void mpu_run(float *ang_x, float *ang_y){
-
+void mpu_run(){
+    printf("Direccion ANG_X en RUN : %p \n",(void*)ang_x);
     int16_t acceleration[3], gyro[3], temp;
     //float en vez de double por ahorro de memoria y mejor rendimiento, pensando en la RP2040
     //clock_t tiempo_previo_ticks = clock(); //está en ciclos del reloj, hay que pasarlo a milisegundos
@@ -265,9 +270,9 @@ void mpu_run(float *ang_x, float *ang_y){
         //SALIDAS TIPO PARA PROGRAMA
         //printf("%d,%d,%d,%d,%d,%d", acceleration[0], acceleration[1], acceleration[2], gyro[0], gyro[1], gyro[2]); //programa original
         
-        //printf("%f,%f\n",*ang_x,*ang_y);
+        printf("%f,%f\n",*ang_x,*ang_y);
        
-        sleep_ms(1); //Lo ideal seria esperar a la interrupcion de la MPU
+        sleep_ms(200); //Lo ideal seria esperar a la interrupcion de la MPU
     }
 
 }

@@ -1,0 +1,3 @@
+--Datos 24/08 ---
+Tiempo entre Interrupciones de la mpu = 0.5ms
+Tiempo en ejecutar los cálculos       = 2,5ms

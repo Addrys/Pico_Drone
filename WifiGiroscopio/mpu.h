@@ -47,8 +47,8 @@ void set_offsets(int16_t gx_o, int16_t gy_o, int16_t gz_o, int16_t ax_o, int16_t
 void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp);
 
 
-void mpu_init() ;
-void mpu_run(float *ang_x, float *ang_y);
+void mpu_init(float *ang_x_referencia, float *ang_y_referencia) ;
+void mpu_run();
 
 #endif
 

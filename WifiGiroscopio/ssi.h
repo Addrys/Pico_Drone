@@ -13,35 +13,27 @@
 
 // SSI tags - tag length limited to 8 bytes by default
 const char * ssi_tags[] = {"volt","temp","led"};
-
+float *referencia_ang_x, *referencia_ang_y;
 u16_t ssi_handler(int iIndex, char *pcInsert, int iInsertLen) {
   size_t printed;
   switch (iIndex) {
     case 0: // X
       { 
-        printf("RUNNING MPU");
-        float ang_x, ang_y;
-        mpu_run(&ang_x,&ang_y);
-        printf("%f,%f\n",ang_x,ang_y);
-        const float ang_x_static = ang_x;
-
-        const float voltage = adc_read() * 3.3f / (1 << 12);
-        printed = snprintf(pcInsert, iInsertLen, "%f", voltage);
+        //printf("RUNNING MPU");
+        //float ang_x, ang_y;
+        //mpu_run(&ang_x,&ang_y);
+        //printf("%f,%f\n",ang_x,ang_y);
+        const float ang_x_static = *referencia_ang_x;
+        printf("%f\t",ang_x_static);
+        printed = snprintf(pcInsert, iInsertLen, "%f", ang_x_static);
       }
       break;
     case 1: // Y
       {
-        printf("RUNNING MPU");
-        float ang_x, ang_y;
         
-        mpu_run(&ang_x,&ang_y);
-        printf("%f,%f\n",ang_x,ang_y);
-        const float ang_y_static = ang_y;
-
-        const float voltage = adc_read() * 3.3f / (1 << 12);
-    const float tempC = 27.0f - (voltage - 0.706f) / 0.001721f;
-
-        printed = snprintf(pcInsert, iInsertLen, "%f", tempC);
+        const float ang_y_static = *referencia_ang_y;
+        printf("%f\n",ang_y_static);
+        printed = snprintf(pcInsert, iInsertLen, "%f", ang_y_static);
       }
       break;
     case 2: // led
@@ -64,18 +56,19 @@ u16_t ssi_handler(int iIndex, char *pcInsert, int iInsertLen) {
 }
 
 // Initialise the SSI handler
-void ssi_init() {
+void ssi_init(float* ang_x_ref, float* ang_y_ref) {
   // Initialise ADC (internal pin)
   adc_init();
   adc_set_temp_sensor_enabled(true);
   adc_select_input(4);
   //iniciamos las configutacion del MPU
-  mpu_init();
+  mpu_init(ang_x_ref,ang_y_ref);
+  referencia_ang_x = ang_x_ref;
+  referencia_ang_y = ang_y_ref;
   printf("MPU iniciada con exito:\n");
+  printf("Direccion ANG_X en SSI : %p \n",(void*)ang_x_ref);
 
-  float ang_x, ang_y;
-  mpu_run(&ang_x,&ang_y);
-  printf("%f,%f\n",ang_x,ang_y);
+
   
   http_set_ssi_handler(ssi_handler, ssi_tags, LWIP_ARRAYSIZE(ssi_tags));
 }

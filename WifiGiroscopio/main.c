@@ -6,6 +6,7 @@
 #include "cgi.h"
 
 #include "ssi.h"
+#include "mpu.h"
 
 // WIFI Credentials - take care if pushing to github!
 const char WIFI_SSID[] = "MOVISTAR_5433";
@@ -32,12 +33,22 @@ int main() {
     printf("Http server initialised\n");
 
     // Configure SSI and CGI handler
-    ssi_init(); 
+ 
+
+    float ang_x, ang_y = 0.0;
+    float* ang_x_ref = &ang_x;
+    float* ang_y_ref = &ang_y;
+
+    printf("Direccion ANG_X en MAIN1 : %p \n",(void*)ang_x_ref);
+
+    ssi_init(ang_x_ref,ang_y_ref); 
     printf("SSI Handler initialised\n");
     cgi_init();
     printf("CGI Handler initialised\n");
+
+    printf("Direccion ANG_X en MAIN2 : %p \n",(void*)ang_x_ref);
     
-    
+    mpu_run();
 
     // Configura el pin de interrupción como entrada
 /*
@@ -49,5 +60,6 @@ int main() {
 */
 
     // Infinite loop
+    printf("ERROR FINALIZADO######################");
     while(1);
 }

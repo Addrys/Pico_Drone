@@ -11,6 +11,13 @@
 #include "hardware/i2c.h"
 #include <math.h>
 #include <time.h>
+#include "hardware/gpio.h"
+#include "hardware/timer.h"
+
+#define PULSE_PIN 1
+volatile uint32_t last_pulse_time = 0;
+
+
 
 #ifndef _CLOCKS_PER_SEC_
 #define _CLOCKS_PER_SEC_ 1000
@@ -127,6 +134,30 @@ void set_offsets(int16_t gx_o, int16_t gy_o, int16_t gz_o, int16_t ax_o, int16_t
     i2c_write_blocking(i2c_default, addr, buf, 3, false);
 }
 
+/**
+ * Esta funcion sirve para limpiar el bit de la interrupcion, es decir para decirle que la hemos recibido
+*/
+static void Read_INT(){
+    uint8_t buffer[1];
+    uint8_t val = 0x3A;
+    
+    write_block = i2c_write_blocking(i2c_default, addr, &val, 1, true); // true to keep master control of bus
+    read_block = i2c_read_blocking(i2c_default, addr, buffer, 1, false);
+    //printf(" Valor del registro INT_STATUS : %u\n", buffer[0]);
+}
+static void Read_INT_Enable(){
+    uint8_t buffer[1];
+    uint8_t val = 0x38;
+    
+    write_block = i2c_write_blocking(i2c_default, addr, &val, 1, true); // true to keep master control of bus
+    read_block = i2c_read_blocking(i2c_default, addr, buffer, 1, false);
+    printf(" Valor del registro INT_ENABLE : %u\n", buffer[0]);
+}
+static void Write_INT_Enable(){
+    uint8_t buf[] = {0x38, 0x01}; //0x38 es la direccion del registro y 0x01 el valor que quiero poner
+    i2c_write_blocking(i2c_default, addr, buf, 2, false);
+    printf("Escribimos %u en INT Enable",buf[1]);
+}
 static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp) {
     // For this particular device, we send the device the register we want to read
     // first, then subsequently read from the device. The register is auto incrementing
@@ -199,9 +230,19 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp) {
 }
 #endif
 
+void pulse_handler(uint gpio, uint32_t events) {
+    uint32_t current_time = time_us_32();
+    uint32_t time_since_last_pulse = current_time - last_pulse_time;
+    last_pulse_time = current_time;
+    printf("Tiempo desde el último pulso: %u microsegundos\n", time_since_last_pulse);
+    Read_INT(); //Limpiamos la el flag de interrupcion
+    
+}
 
 int main() {
     stdio_init_all();
+
+    sleep_ms(4000);
     //gpio_init(15);
     //gpio_set_dir(15, GPIO_OUT);
     //gpio_init(16);
@@ -225,6 +266,27 @@ int main() {
     bi_decl(bi_2pins_with_func(PICO_DEFAULT_I2C_SDA_PIN, PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C));
 
     mpu6050_reset();
+    sleep_ms(1000);
+    Read_INT_Enable();
+    Write_INT_Enable();
+    sleep_ms(1000);
+    Read_INT_Enable();
+
+    Read_INT();
+
+/*
+    gpio_init(PULSE_PIN);
+    gpio_set_dir(PULSE_PIN, GPIO_IN);
+    
+    // Configuración del timer para generar interrup
+
+    // Configuración de la interrupción para el pin de pulso
+    gpio_set_irq_enabled_with_callback(PULSE_PIN, GPIO_IRQ_EDGE_FALL, true, &pulse_handler);
+
+    while (1) {
+        tight_loop_contents();
+    }*/
+
 
     int16_t acceleration[3], gyro[3], temp;
     //float en vez de double por ahorro de memoria y mejor rendimiento, pensando en la RP2040
@@ -240,10 +302,10 @@ int main() {
     
     float accel_ang_x, accel_ang_y = 0.0; //inicializamos a 0
     //double timepo_previo = (double)tiempo_previo_ticks * 1000 / CLOCKS_PER_SEC;
-    /*
+    
     mostrar_offsets(); //funcion propia para mostrar los offsetss
     set_offsets(-303,86,-38,-1493,1868,1243);  //funcion propia para poner los offsets calculados con el arduino
-    */
+    
     //Añadimos el manejador para el tiempo
     
     tiempo_previo = time_us_32();
@@ -286,11 +348,16 @@ int main() {
         */
         //SALIDAS TIPO PARA PROGRAMA
         //printf("%d,%d,%d,%d,%d,%d", acceleration[0], acceleration[1], acceleration[2], gyro[0], gyro[1], gyro[2]); //programa original
-        
-        printf("%f,%f\n",ang_x,ang_y);
+
+        //printf("%f,%f\n",ang_x,ang_y);
        
-        sleep_ms(1); //Lo ideal seria esperar a la interrupcion de la MPU
+        //sleep_ms(1); //Lo ideal seria esperar a la interrupcion de la MPU
+        uint32_t current_time = time_us_32();
+        uint32_t time_since_last_pulse = current_time - last_pulse_time;
+        last_pulse_time = current_time;
+        printf("Tiempo desde el último pulso: %u microsegundos\n", time_since_last_pulse);
     }
+
 
 #endif
     return 0;
