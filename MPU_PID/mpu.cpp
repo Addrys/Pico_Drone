@@ -175,8 +175,8 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp) {
 void mpu6050_run(){
     //Ajustamos los coeficientes del controlador PID
     float kp = 2.0;
-    float ki = 0.1;
-    float kd = 1.0;
+    float ki = 0; //0.1
+    float kd = 1.0; //1.0
     //creamos los controladores
     controladorPID pidMotor1_roll(kp,ki,kd,true);
     controladorPID pidMotor2_roll(kp,ki,kd,true);//Roll + para M2
@@ -278,6 +278,7 @@ void mpu6050_run(){
             ctrlM4_pitch = pidMotor4_pitch.computar(0, ang_y);
             ctrlM4 = ctrlM4_roll + ctrlM4_pitch;
            
+           //printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1_pitch,ctrlM2_pitch,ctrlM3_pitch,ctrlM4_pitch);
             printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1,ctrlM2,ctrlM3,ctrlM4);
         }else{
             printf("INFINITO: pitch(X): %f, roll(y): %f\n",ang_x,ang_y);

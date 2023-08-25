@@ -33,7 +33,7 @@ if (TARGET tinyusb_device)
 
 	# create map/bin/hex file etc.
 	pico_add_extra_outputs(mpu6050_i2c)
-    add_compile_options(-O0)
+    
 	# add url via pico_set_program_url
 	#example_auto_set_url(mpu6050_i2c)
 

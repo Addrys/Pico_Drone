@@ -5,7 +5,8 @@ controladorPID::controladorPID(float kp, float ki, float kd, bool polaridad)
       prevError(0.0), integral(0.0) {}
 
 float controladorPID::computar(float setpoint, float current) {
-    float error = setpoint - (current*polaridad);
+    if (!polaridad){current = -current;}
+    float error = setpoint - (current);
     integral += error;
     float derivative = error - prevError;
     prevError = error;

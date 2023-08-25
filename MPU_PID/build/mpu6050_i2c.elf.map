@@ -670,8 +670,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .data          0x00000000        0x0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .bss           0x00000000        0x0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .text.__wrap___aeabi_fcmpeq
-                0x00000000       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_fcmplt
                 0x00000000        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_fcmpge
@@ -1721,9 +1719,9 @@ Discarded input sections
  .comment       0x00000000       0x27 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
- .text          0x00000000        0x0 /tmp/cclzK8nK.o
- .data          0x00000000        0x0 /tmp/cclzK8nK.o
- .bss           0x00000000        0x0 /tmp/cclzK8nK.o
+ .text          0x00000000        0x0 /tmp/ccZtegR4.o
+ .data          0x00000000        0x0 /tmp/ccZtegR4.o
+ .bss           0x00000000        0x0 /tmp/ccZtegR4.o
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000       0x10 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -2015,11 +2013,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/cclzK8nK.o
+ .boot2         0x10000000      0x100 /tmp/ccZtegR4.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x6cb0
+.text           0x10000100     0x6cc8
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -2084,602 +2082,604 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x10000354       0x18 CMakeFiles/mpu6050_i2c.dir/main.cpp.obj
                 0x10000354                main
  .text._Z11mpu6050_runv
-                0x1000036c      0x4f0 CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
+                0x1000036c      0x4ec CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
                 0x1000036c                mpu6050_run()
  .text._ZN14controladorPIDC2Efffb
-                0x1000085c       0x20 CMakeFiles/mpu6050_i2c.dir/pid.cpp.obj
-                0x1000085c                controladorPID::controladorPID(float, float, float, bool)
-                0x1000085c                controladorPID::controladorPID(float, float, float, bool)
+                0x10000858       0x20 CMakeFiles/mpu6050_i2c.dir/pid.cpp.obj
+                0x10000858                controladorPID::controladorPID(float, float, float, bool)
+                0x10000858                controladorPID::controladorPID(float, float, float, bool)
  .text._ZN14controladorPID8computarEff
-                0x1000087c       0x5c CMakeFiles/mpu6050_i2c.dir/pid.cpp.obj
-                0x1000087c                controladorPID::computar(float, float)
+                0x10000878       0x6c CMakeFiles/mpu6050_i2c.dir/pid.cpp.obj
+                0x10000878                controladorPID::computar(float, float)
  .text.gpio_set_function
-                0x100008d8       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100008d8                gpio_set_function
+                0x100008e4       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100008e4                gpio_set_function
  .text.gpio_set_pulls
-                0x10000908       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000908                gpio_set_pulls
+                0x10000914       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000914                gpio_set_pulls
  .text.running_on_fpga
-                0x1000092c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x1000092c                running_on_fpga
+                0x10000938       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x10000938                running_on_fpga
  .text.hw_claim_or_assert
-                0x1000093c       0x44 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x1000093c                hw_claim_or_assert
+                0x10000948       0x44 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000948                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x10000980       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000980                hw_claim_unused_from_range
+                0x1000098c       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000098c                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x10000a1c       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000a1c                spin_locks_reset
+                0x10000a28       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000a28                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000a38       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000a38                next_striped_spin_lock_num
+                0x10000a44       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000a44                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x10000a50       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000a50                spin_lock_claim_unused
+                0x10000a5c       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000a5c                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x10000a74       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000a74                irq_set_enabled
+                0x10000a80       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000a80                irq_set_enabled
  .text.irq_set_pending
-                0x10000a98       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000a98                irq_set_pending
+                0x10000aa4       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000aa4                irq_set_pending
  .text.irq_has_shared_handler
-                0x10000aa8       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000aa8                irq_has_shared_handler
+                0x10000ab4       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ab4                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x10000ad4       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000ad4                irq_get_vtable_handler
+                0x10000ae0       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ae0                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000ae4       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000ae4                irq_set_exclusive_handler
+                0x10000af0       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000af0                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x10000b38      0x1f4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000b38                irq_add_shared_handler
+                0x10000b44      0x1f4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000b44                irq_add_shared_handler
  .text.irq_remove_handler
-                0x10000d2c      0x1c4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000d2c                irq_remove_handler
+                0x10000d38      0x1c4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000d38                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x10000ef0       0xb4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000ef0                irq_add_tail_to_free_list
+                0x10000efc       0xb4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000efc                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10000fa4       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000fa4                irq_init_priorities
+                0x10000fb0       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000fb0                irq_init_priorities
  .text.user_irq_claim_unused
-                0x10000fc8       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000fc8                user_irq_claim_unused
+                0x10000fd4       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000fd4                user_irq_claim_unused
  .text.lock_init
-                0x10000ff4       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10000ff4                lock_init
+                0x10001000       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10001000                lock_init
  .text.mutex_init
-                0x10001004       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001004                mutex_init
+                0x10001010       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10001010                mutex_init
  .text.recursive_mutex_init
-                0x10001020       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001020                recursive_mutex_init
+                0x1000102c       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000102c                recursive_mutex_init
  .text.critical_section_init
-                0x1000103c       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x1000103c                critical_section_init
+                0x10001048       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x10001048                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x10001058       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x10001058                critical_section_init_with_lock_num
+                0x10001064       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x10001064                critical_section_init_with_lock_num
  .text.timer_pool_entry_comparator
-                0x1000106c       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000106c                timer_pool_entry_comparator
+                0x10001078       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001078                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x100010a0       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100010ac       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x100010d0      0x100 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100010dc      0x100 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x100011d0      0x1c0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100011dc      0x1c0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10001390       0x6c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001390                alarm_pool_init_default
+                0x1000139c       0x6c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000139c                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x100013fc        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100013fc                alarm_pool_get_default
+                0x10001408        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001408                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x10001404      0x188 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001404                alarm_pool_add_alarm_at
+                0x10001410      0x188 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001410                alarm_pool_add_alarm_at
  .text.alarm_pool_core_num
-                0x1000158c        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000158c                alarm_pool_core_num
+                0x10001598        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001598                alarm_pool_core_num
  .text.sleep_until
-                0x10001590       0xc4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001590                sleep_until
+                0x1000159c       0xc4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000159c                sleep_until
  .text.sleep_ms
-                0x10001654       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001654                sleep_ms
+                0x10001660       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001660                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x1000168c       0xec CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000168c                best_effort_wfe_or_timeout
+                0x10001698       0xec CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001698                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x10001778       0xbc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001784       0xbc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001834       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001834                hardware_alarm_claim
+                0x10001840       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001840                hardware_alarm_claim
  .text.time_us_64
-                0x1000184c       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000184c                time_us_64
+                0x10001858       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001858                time_us_64
  .text.busy_wait_until
-                0x10001860       0x20 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001860                busy_wait_until
+                0x1000186c       0x20 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000186c                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x10001880       0x8c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001880                hardware_alarm_set_callback
+                0x1000188c       0x8c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000188c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x1000190c       0xd0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000190c                hardware_alarm_set_target
+                0x10001918       0xd0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001918                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x100019dc       0x3c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100019dc                hardware_alarm_cancel
+                0x100019e8       0x3c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100019e8                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x10001a18       0x64 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001a24       0x64 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x10001a7c       0x3c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001a7c                ph_post_alloc_init
+                0x10001a88       0x3c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001a88                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x10001ab8       0x98 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001ab8                ph_merge_two_pass
+                0x10001ac4       0x98 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001ac4                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x10001b50      0x100 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001b5c      0x100 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x10001c50      0x104 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001c50                ph_remove_head
+                0x10001c5c      0x104 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001c5c                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001d54       0x78 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001d54                ph_remove_and_free_node
+                0x10001d60       0x78 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001d60                ph_remove_and_free_node
  .text.clocks_init
-                0x10001dcc      0x2c8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001dcc                clocks_init
+                0x10001dd8      0x2c8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001dd8                clocks_init
  .text.clock_get_hz
-                0x10002094        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002094                clock_get_hz
+                0x100020a0        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100020a0                clock_get_hz
  .text.pll_init
-                0x100020a0       0xa0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x100020a0                pll_init
+                0x100020ac       0xa0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x100020ac                pll_init
  .text.watchdog_start_tick
-                0x10002140       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10002140                watchdog_start_tick
+                0x1000214c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x1000214c                watchdog_start_tick
  .text.watchdog_reboot
-                0x10002150       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10002150                watchdog_reboot
+                0x1000215c       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x1000215c                watchdog_reboot
  .text.xosc_init
-                0x100021ec       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x100021ec                xosc_init
+                0x100021f8       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x100021f8                xosc_init
  .text.runtime_init
-                0x10002214       0xf0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002214                runtime_init
- .text._exit    0x10002304        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002304                _exit
- .text.exit     0x10002308        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002308                exit
- .text.panic    0x10002310       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002310                panic
+                0x10002220       0xf0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002220                runtime_init
+ .text._exit    0x10002310        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002310                _exit
+ .text.exit     0x10002314        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002314                exit
+ .text.panic    0x1000231c       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000231c                panic
  .text.hard_assertion_failure
-                0x10002340        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002340                hard_assertion_failure
+                0x1000234c        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000234c                hard_assertion_failure
  .text._out_null
-                0x1000234c        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002358        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x10002350       0x90 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000235c       0x90 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x100023e0      0x1f4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100023ec      0x1f4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x100025d4       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100025e0       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x100025e4       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x100025f4      0x454 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002a48      0x3c4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100025f0       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x10002600      0x454 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x10002a54      0x3c4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x10002e0c      0xb24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002e18      0xb24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x10003930       0x20 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10003930                vfctprintf
+                0x1000393c       0x20 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000393c                vfctprintf
  .text.weak_raw_vprintf
-                0x10003950       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10003950                weak_raw_vprintf
- .text          0x10003980       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x1000395c       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000395c                weak_raw_vprintf
+ .text          0x1000398c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10003990       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003990                rom_func_lookup
+                0x1000399c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x1000399c                rom_func_lookup
  .text.rom_data_lookup
-                0x100039a0       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100039a0                rom_data_lookup
+                0x100039ac       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100039ac                rom_data_lookup
  .text.rom_funcs_lookup
-                0x100039b0       0x44 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100039b0                rom_funcs_lookup
+                0x100039bc       0x44 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100039bc                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x100039f4       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100039f4                __wrap___aeabi_idivmod
-                0x100039f4                divmod_s32s32
-                0x100039f4                div_s32s32
-                0x100039f4                __wrap___aeabi_idiv
-                0x100039fc                divmod_s32s32_unsafe
-                0x10003a28                divmod_s32s32_savestate
+                0x10003a00       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003a00                __wrap___aeabi_idivmod
+                0x10003a00                divmod_s32s32
+                0x10003a00                div_s32s32
+                0x10003a00                __wrap___aeabi_idiv
+                0x10003a08                divmod_s32s32_unsafe
+                0x10003a34                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x10003a44       0x4c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003a44                __wrap___aeabi_uidiv
-                0x10003a44                __wrap___aeabi_uidivmod
-                0x10003a44                div_u32u32
-                0x10003a44                divmod_u32u32
-                0x10003a4c                divmod_u32u32_unsafe
-                0x10003a74                divmod_u32u32_savestate
+                0x10003a50       0x4c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003a50                __wrap___aeabi_uidiv
+                0x10003a50                __wrap___aeabi_uidivmod
+                0x10003a50                div_u32u32
+                0x10003a50                divmod_u32u32
+                0x10003a58                divmod_u32u32_unsafe
+                0x10003a80                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10003a90      0x424 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003a90                div_s64s64
-                0x10003a90                divmod_s64s64
-                0x10003a90                __wrap___aeabi_ldivmod
-                0x10003ac0                div_u64u64
-                0x10003ac0                divmod_u64u64
-                0x10003ac0                __wrap___aeabi_uldivmod
-                0x10003ad0                divmod_u64u64_savestate
-                0x10003af0                divmod_s64s64_unsafe
-                0x10003b78                divmod_u64u64_unsafe
+                0x10003a9c      0x424 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003a9c                div_s64s64
+                0x10003a9c                divmod_s64s64
+                0x10003a9c                __wrap___aeabi_ldivmod
+                0x10003acc                div_u64u64
+                0x10003acc                divmod_u64u64
+                0x10003acc                __wrap___aeabi_uldivmod
+                0x10003adc                divmod_u64u64_savestate
+                0x10003afc                divmod_s64s64_unsafe
+                0x10003b84                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10003eb4       0x60 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003eb4                __wrap___aeabi_drsub
-                0x10003eba                __wrap___aeabi_dsub
-                0x10003ec4                __wrap___aeabi_dadd
-                0x10003ece                __wrap___aeabi_ddiv
-                0x10003f02                __wrap___aeabi_dmul
+                0x10003ec0       0x60 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ec0                __wrap___aeabi_drsub
+                0x10003ec6                __wrap___aeabi_dsub
+                0x10003ed0                __wrap___aeabi_dadd
+                0x10003eda                __wrap___aeabi_ddiv
+                0x10003f0e                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10003f14       0x6c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f14                __wrap___aeabi_cdrcmple
-                0x10003f24                __wrap___aeabi_cdcmple
-                0x10003f24                __wrap___aeabi_cdcmpeq
+                0x10003f20       0x6c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f20                __wrap___aeabi_cdrcmple
+                0x10003f30                __wrap___aeabi_cdcmple
+                0x10003f30                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmpeq
-                0x10003f80       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f80                __wrap___aeabi_dcmpeq
+                0x10003f8c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f8c                __wrap___aeabi_dcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10003f90        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f90                __wrap___aeabi_dcmplt
+                0x10003f9c        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003f9c                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmpge
-                0x10003f9c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003f9c                __wrap___aeabi_dcmpge
+                0x10003fa8       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003fa8                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003fac        0xa CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003fac                __wrap___aeabi_dcmpgt
+                0x10003fb8        0xa CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003fb8                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10003fb6       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003fb6                __wrap___aeabi_dcmpun
- *fill*         0x10003fd2        0x2 
+                0x10003fc2       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003fc2                __wrap___aeabi_dcmpun
+ *fill*         0x10003fde        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003fd4       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003fd4                __wrap___aeabi_ui2d
-                0x10003fdc                __wrap___aeabi_i2d
+                0x10003fe0       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003fe0                __wrap___aeabi_ui2d
+                0x10003fe8                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x1000400c       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x1000400c                __wrap___aeabi_d2iz
-                0x1000400c                double2int_z
+                0x10004018       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10004018                __wrap___aeabi_d2iz
+                0x10004018                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x10004054       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10004054                double2uint
-                0x10004054                __wrap___aeabi_d2uiz
+                0x10004060       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10004060                double2uint
+                0x10004060                __wrap___aeabi_d2uiz
  .text.__wrap___aeabi_d2f
-                0x10004064       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10004064                __wrap___aeabi_d2f
+                0x10004070       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10004070                __wrap___aeabi_d2f
  .text.__wrap_srqt
-                0x10004074       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10004074                __wrap_sqrt
+                0x10004080       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10004080                __wrap_sqrt
  .text.__wrap_atan2
-                0x10004084       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10004084                __wrap_atan2
+                0x10004090       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10004090                __wrap_atan2
  .text.missing_double_func_shim
-                0x10004094        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x100040a0        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .text.__aeabi_double_init
-                0x100040a0       0x94 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x100040a0                __aeabi_double_init
+                0x100040ac       0x94 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x100040ac                __aeabi_double_init
  .text.__wrap_atan
-                0x10004134       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-                0x10004134                __wrap_atan
+                0x10004140       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x10004140                __wrap_atan
  .text.double_table_shim_on_use_helper
-                0x10004174       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004174                double_table_shim_on_use_helper
+                0x10004180       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004180                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x100041a0       0x32 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x100041a0                __wrap___aeabi_lmul
- *fill*         0x100041d2        0x2 
+                0x100041ac       0x32 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x100041ac                __wrap___aeabi_lmul
+ *fill*         0x100041de        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x100041d4       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x100041d4                __wrap___aeabi_frsub
-                0x100041da                __wrap___aeabi_fsub
-                0x100041e0                __wrap___aeabi_fadd
-                0x100041e6                __wrap___aeabi_fdiv
-                0x1000420e                __wrap___aeabi_fmul
+                0x100041e0       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x100041e0                __wrap___aeabi_frsub
+                0x100041e6                __wrap___aeabi_fsub
+                0x100041ec                __wrap___aeabi_fadd
+                0x100041f2                __wrap___aeabi_fdiv
+                0x1000421a                __wrap___aeabi_fmul
  .text.__wrap___aeabi_cfcmple
-                0x1000421c       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x1000421c                __wrap___aeabi_cfrcmple
-                0x10004228                __wrap___aeabi_cfcmpeq
-                0x10004228                __wrap___aeabi_cfcmple
+                0x10004228       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004228                __wrap___aeabi_cfrcmple
+                0x10004234                __wrap___aeabi_cfcmpeq
+                0x10004234                __wrap___aeabi_cfcmple
+ .text.__wrap___aeabi_fcmpeq
+                0x10004278       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004278                __wrap___aeabi_fcmpeq
  .text.__wrap___aeabi_fcmple
-                0x1000426c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x1000426c                __wrap___aeabi_fcmple
+                0x10004288       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004288                __wrap___aeabi_fcmple
  .text.__wrap___aeabi_fcmpun
-                0x1000427c       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x1000427c                __wrap___aeabi_fcmpun
+                0x10004298       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004298                __wrap___aeabi_fcmpun
  .text.__wrap___aeabi_ui2f
-                0x10004294        0xa CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10004294                __wrap___aeabi_ui2f
- *fill*         0x1000429e        0x2 
+                0x100042b0        0xa CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x100042b0                __wrap___aeabi_ui2f
+ *fill*         0x100042ba        0x2 
  .text.__wrap___aeabi_i2f
-                0x100042a0       0x44 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x100042a0                __wrap___aeabi_i2f
+                0x100042bc       0x44 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x100042bc                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2d
-                0x100042e4        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x100042e4                __wrap___aeabi_f2d
+                0x10004300        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004300                __wrap___aeabi_f2d
  .text.missing_float_func_shim
-                0x100042f0        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x1000430c        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .text.__aeabi_float_init
-                0x100042fc       0x5c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x100042fc                __aeabi_float_init
- .text          0x10004358       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004358                __aeabi_mem_init
- .text.memset   0x10004368        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004368                __wrap_memset
- .text.memcpy   0x10004374        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004374                __wrap___aeabi_memcpy
-                0x10004374                __wrap_memcpy
+                0x10004318       0x5c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10004318                __aeabi_float_init
+ .text          0x10004374       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004374                __aeabi_mem_init
+ .text.memset   0x10004384        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004384                __wrap_memset
+ .text.memcpy   0x10004390        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004390                __wrap___aeabi_memcpy
+                0x10004390                __wrap_memcpy
  .text.stdio_out_chars_crlf
-                0x10004380       0xbc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000439c       0xbc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x1000443c       0x64 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004458       0x64 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x100044a0       0x98 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100044a0                __wrap_putchar
+                0x100044bc       0x98 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100044bc                __wrap_putchar
  .text.__wrap_puts
-                0x10004538       0xe0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004538                __wrap_puts
+                0x10004554       0xe0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004554                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x10004618       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004618                stdio_set_driver_enabled
+                0x10004634       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004634                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x10004648       0xd4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004648                __wrap_vprintf
+                0x10004664       0xd4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004664                __wrap_vprintf
  .text.__wrap_printf
-                0x1000471c       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000471c                __wrap_printf
+                0x10004738       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004738                __wrap_printf
  .text.stdio_init_all
-                0x10004734        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004734                stdio_init_all
+                0x10004750        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004750                stdio_init_all
  .text.resetd_init
-                0x1000473c        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004758        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x10004740        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x1000475c        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x1000474c       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004768       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x10004774        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004790        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x10004778       0x60 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004794       0x60 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x100047d8        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x100047d8                usbd_app_driver_get_cb
+                0x100047f4        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x100047f4                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x100047e4       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x100047e4                tud_cdc_line_coding_cb
+                0x10004800       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004800                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x10004818       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10004818                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x1000482c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004834       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004834                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x10004848       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x1000483c       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004858       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_in_chars
-                0x10004890       0x90 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10004890                stdio_usb_in_chars
+                0x100048ac       0x90 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x100048ac                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x10004920      0x104 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x1000493c      0x104 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x10004a24       0xa8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004a40       0xa8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.tud_cdc_rx_cb
-                0x10004acc       0x20 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10004acc                tud_cdc_rx_cb
+                0x10004ae8       0x20 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004ae8                tud_cdc_rx_cb
  .text.stdio_usb_init
-                0x10004aec       0xe0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10004aec                stdio_usb_init
+                0x10004b08       0xe0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004b08                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x10004bcc        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x10004bcc                tud_descriptor_device_cb
+                0x10004be8        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004be8                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x10004bd4        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x10004bd4                tud_descriptor_configuration_cb
+                0x10004bf0        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004bf0                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x10004bdc       0x78 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x10004bdc                tud_descriptor_string_cb
+                0x10004bf8       0x78 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004bf8                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x10004c54       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x10004c70       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x10004c64      0x1a8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x10004c64                pico_get_unique_board_id_string
+                0x10004c80      0x1a8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x10004c80                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x10004e0c       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x10004e0c                flash_get_unique_id
+                0x10004e28       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x10004e28                flash_get_unique_id
  .text.dcd_int_enable
-                0x10004e4c        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e4c                dcd_int_enable
+                0x10004e68        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e68                dcd_int_enable
  .text.dcd_set_address
-                0x10004e58       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e58                dcd_set_address
+                0x10004e74       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e74                dcd_set_address
  .text.dcd_connect
-                0x10004e6c       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e6c                dcd_connect
+                0x10004e88       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e88                dcd_connect
  .text.dcd_init
-                0x10004e7c       0x98 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004e7c                dcd_init
+                0x10004e98       0x98 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004e98                dcd_init
  .text.dcd_edpt0_status_complete
-                0x10004f14       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004f14                dcd_edpt0_status_complete
+                0x10004f30       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004f30                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x10004f30      0x108 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004f30                dcd_edpt_open
+                0x10004f4c      0x108 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004f4c                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x10005038        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10005038                dcd_edpt_close_all
+                0x10005054        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10005054                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x10005040       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10005040                dcd_edpt_xfer
+                0x1000505c       0x24 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000505c                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x10005064       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10005064                dcd_edpt_stall
+                0x10005080       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10005080                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x1000509c       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x1000509c                dcd_edpt_clear_stall
+                0x100050b8       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x100050b8                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x100050cc       0x4c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x100050cc                rp2040_usb_init
+                0x100050e8       0x4c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x100050e8                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x10005118       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x10005118                hw_endpoint_xfer_start
+                0x10005134       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10005134                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x10005158       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005158                tud_mounted
+                0x10005174       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005174                tud_mounted
  .text.tud_suspended
-                0x10005168       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005168                tud_suspended
+                0x10005184       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005184                tud_suspended
  .text.tud_inited
-                0x10005178       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005178                tud_inited
+                0x10005194       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005194                tud_inited
  .text.tud_init
-                0x1000518c       0xd8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x1000518c                tud_init
+                0x100051a8       0xd8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x100051a8                tud_init
  .text.tud_task_ext
-                0x10005264      0x8a8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005264                tud_task_ext
+                0x10005280      0x8a8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005280                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x10005b0c       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005b0c                usbd_open_edpt_pair
+                0x10005b28       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005b28                usbd_open_edpt_pair
  .text.usbd_defer_func
-                0x10005ba8       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005ba8                usbd_defer_func
+                0x10005bc4       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005bc4                usbd_defer_func
  .text.usbd_edpt_open
-                0x10005bf0       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005bf0                usbd_edpt_open
+                0x10005c0c       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005c0c                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x10005c24       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005c24                usbd_edpt_claim
+                0x10005c40       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005c40                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x10005c4c       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005c4c                usbd_edpt_release
+                0x10005c68       0x28 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005c68                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x10005c74       0x4c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10005c74                usbd_edpt_xfer
+                0x10005c90       0x4c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10005c90                usbd_edpt_xfer
  .text.tud_control_status
-                0x10005cc0       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005cc0                tud_control_status
+                0x10005cdc       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005cdc                tud_control_status
  .text.tud_control_xfer
-                0x10005cec       0xac CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005cec                tud_control_xfer
+                0x10005d08       0xac CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005d08                tud_control_xfer
  .text.usbd_control_reset
-                0x10005d98       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005d98                usbd_control_reset
+                0x10005db4       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005db4                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x10005dac        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005dac                usbd_control_set_complete_callback
+                0x10005dc8        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005dc8                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x10005db8       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005db8                usbd_control_set_request
+                0x10005dd4       0x1c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005dd4                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x10005dd4       0xf4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005dd4                usbd_control_xfer_cb
+                0x10005df0       0xf4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005df0                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x10005ec8       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005ec8                tud_cdc_n_connected
+                0x10005ee4       0x30 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005ee4                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x10005ef8       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005ef8                tud_cdc_n_available
+                0x10005f14       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005f14                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x10005f10       0x70 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005f10                tud_cdc_n_read
+                0x10005f2c       0x70 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005f2c                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x10005f80       0x78 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005f80                tud_cdc_n_write_flush
+                0x10005f9c       0x78 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005f9c                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x10005ff8       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005ff8                tud_cdc_n_write
+                0x10006014       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10006014                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x1000602c       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x1000602c                tud_cdc_n_write_available
+                0x10006048       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10006048                tud_cdc_n_write_available
  .text.cdcd_init
-                0x10006044       0x7c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10006044                cdcd_init
+                0x10006060       0x7c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10006060                cdcd_init
  .text.cdcd_reset
-                0x100060c0       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x100060c0                cdcd_reset
+                0x100060dc       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x100060dc                cdcd_reset
  .text.cdcd_open
-                0x100060ec       0xe4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x100060ec                cdcd_open
+                0x10006108       0xe4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10006108                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x100061d0       0xe4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x100061d0                cdcd_control_xfer_cb
+                0x100061ec       0xe4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x100061ec                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x100062b4      0x13c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x100062b4                cdcd_xfer_cb
+                0x100062d0      0x13c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x100062d0                cdcd_xfer_cb
  .text.tusb_init
-                0x100063f0        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x100063f0                tusb_init
+                0x1000640c        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x1000640c                tusb_init
  .text.tusb_inited
-                0x100063fc        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x100063fc                tusb_inited
+                0x10006418        0x8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10006418                tusb_inited
  .text.tu_edpt_claim
-                0x10006404       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10006404                tu_edpt_claim
+                0x10006420       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10006420                tu_edpt_claim
  .text.tu_edpt_release
-                0x10006454       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10006454                tu_edpt_release
+                0x10006470       0x38 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10006470                tu_edpt_release
  .text.tu_edpt_validate
-                0x1000648c       0x7c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x1000648c                tu_edpt_validate
+                0x100064a8       0x7c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x100064a8                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x10006508       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10006508                tu_edpt_bind_driver
+                0x10006524       0x34 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10006524                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x1000653c       0x6c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x1000653c                tu_fifo_config
+                0x10006558       0x6c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006558                tu_fifo_config
  .text.tu_fifo_count
-                0x100065a8       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100065a8                tu_fifo_count
+                0x100065c4       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100065c4                tu_fifo_count
  .text.tu_fifo_empty
-                0x100065d4       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100065d4                tu_fifo_empty
+                0x100065f0       0x10 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100065f0                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x100065e4       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100065e4                tu_fifo_remaining
+                0x10006600       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006600                tu_fifo_remaining
  .text.tu_fifo_read
-                0x10006610       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006610                tu_fifo_read
+                0x1000662c       0x9c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x1000662c                tu_fifo_read
  .text.tu_fifo_read_n
-                0x100066ac       0xe8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100066ac                tu_fifo_read_n
+                0x100066c8       0xe8 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100066c8                tu_fifo_read_n
  .text.tu_fifo_write
-                0x10006794       0x88 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006794                tu_fifo_write
+                0x100067b0       0x88 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100067b0                tu_fifo_write
  .text.tu_fifo_write_n
-                0x1000681c      0x170 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x1000681c                tu_fifo_write_n
+                0x10006838      0x170 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006838                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x1000698c       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x1000698c                tu_fifo_clear
+                0x100069a8       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100069a8                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x100069cc       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100069cc                tu_fifo_set_overwritable
+                0x100069e8       0x48 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100069e8                tu_fifo_set_overwritable
  .text.i2c_set_baudrate
-                0x10006a14       0xc4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006a14                i2c_set_baudrate
+                0x10006a30       0xc4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x10006a30                i2c_set_baudrate
  .text.i2c_init
-                0x10006ad8       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006ad8                i2c_init
+                0x10006af4       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x10006af4                i2c_init
  .text.i2c_write_blocking
-                0x10006b2c       0xd0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006b2c                i2c_write_blocking
+                0x10006b48       0xd0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x10006b48                i2c_write_blocking
  .text.i2c_read_blocking
-                0x10006bfc       0x90 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006bfc                i2c_read_blocking
- .text          0x10006c8c       0x5c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x10006c8c                strlen
+                0x10006c18       0x90 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x10006c18                i2c_read_blocking
+ .text          0x10006ca8       0x5c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x10006ca8                strlen
  *(.fini)
- .fini          0x10006ce8        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
-                0x10006ce8                _fini
- *fill*         0x10006cec        0x4 
- .fini.__stub   0x10006cf0       0xc0 linker stubs
+ .fini          0x10006d04        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
+                0x10006d04                _fini
+ .fini.__stub   0x10006d08       0xc0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2691,126 +2691,126 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10006db0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10006db0                        . = ALIGN (0x4)
+ .eh_frame      0x10006dc8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10006dc8                        . = ALIGN (0x4)
 
-.glue_7         0x10006db0        0x0
- .glue_7        0x10006db0        0x0 linker stubs
+.glue_7         0x10006dc8        0x0
+ .glue_7        0x10006dc8        0x0 linker stubs
 
-.glue_7t        0x10006db0        0x0
- .glue_7t       0x10006db0        0x0 linker stubs
+.glue_7t        0x10006dc8        0x0
+ .glue_7t       0x10006dc8        0x0 linker stubs
 
-.vfp11_veneer   0x10006db0        0x0
- .vfp11_veneer  0x10006db0        0x0 linker stubs
+.vfp11_veneer   0x10006dc8        0x0
+ .vfp11_veneer  0x10006dc8        0x0 linker stubs
 
-.v4_bx          0x10006db0        0x0
- .v4_bx         0x10006db0        0x0 linker stubs
+.v4_bx          0x10006dc8        0x0
+ .v4_bx         0x10006dc8        0x0 linker stubs
 
-.iplt           0x10006db0        0x0
- .iplt          0x10006db0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10006dc8        0x0
+ .iplt          0x10006dc8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10006db0      0x5a8
+.rodata         0x10006dc8      0x5a8
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata._Z11mpu6050_runv.str1.4
-                0x10006db0      0x243 CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
+                0x10006dc8      0x243 CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
                                  0xad (size before relaxing)
- *fill*         0x10006ff3        0x1 
+ *fill*         0x1000700b        0x1 
  .rodata._ZZ11mpu6050_runvE8__bi_205
-                0x10006ff4        0x8 CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
+                0x1000700c        0x8 CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x10006ffc       0x1b CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10007014       0x1b CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .rodata.user_irq_claim_unused.str1.4
-                0x10006ffc       0x1b CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10007014       0x1b CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.hardware_alarm_claim.str1.4
-                0x10006ffc       0x22 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10007014       0x22 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.panic.str1.4
-                0x10006ffc       0x12 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10007014       0x12 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.hard_assertion_failure.str1.4
-                0x10006ffc        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10007014        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x10006ffc       0x15 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10007014       0x15 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata._vsnprintf
-                0x10006ffc      0x19c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10007014      0x19c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x10007198       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100071b0       0x50 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x100071e8       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10007200       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x100071e8        0x1 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10007200        0x1 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .rodata.str1.4
-                0x100071e8       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10007200       0x40 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x100071e8        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .rodata.__bi_75
-                0x100071f4        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .rodata.__bi_44
                 0x10007200        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .rodata.__bi_75
+                0x1000720c        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .rodata.__bi_44
+                0x10007218        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x1000720c        0x2 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000720e        0x2 
+                0x10007224        0x2 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10007226        0x2 
  .rodata._resetd_driver
-                0x10007210       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10007228       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x10007228       0x13 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10007240       0x13 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.__bi_182.0
-                0x10007228        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10007240        0xc CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x10007234       0x2a CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x1000724c       0x2a CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_str
-                0x10007234       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x1000724c       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_cfg
-                0x1000724c       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10007264       0x54 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x100072a0       0x12 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x100072b8       0x12 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.str1.4
-                0x100072b2       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x100072ca       0x14 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x100072b2       0x53 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x100072b2        0x2 
+                0x100072ca       0x53 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x100072ca        0x2 
  .rodata.tud_task_ext
-                0x100072b4       0x8c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x100072cc       0x8c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x10007340       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10007358                        . = ALIGN (0x4)
+                0x10007358       0x18 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10007370                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10007358                        . = ALIGN (0x4)
+                0x10007370                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10007358                        __exidx_start = .
+                0x10007370                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10007358                        __exidx_end = .
-                0x10007358                        . = ALIGN (0x4)
-                0x10007358                        __binary_info_start = .
+                0x10007370                        __exidx_end = .
+                0x10007370                        . = ALIGN (0x4)
+                0x10007370                        __binary_info_start = .
 
-.binary_info    0x10007358       0x24
+.binary_info    0x10007370       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr205
-                0x10007358        0x4 CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
+                0x10007370        0x4 CMakeFiles/mpu6050_i2c.dir/mpu.cpp.obj
  .binary_info.keep.__bi_ptr81
-                0x1000735c        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
-                0x10007360        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
-                0x10007364        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
-                0x10007368        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
-                0x1000736c        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
-                0x10007370        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr22
                 0x10007374        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr75
+                0x10007378        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr50
+                0x1000737c        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr44
+                0x10007380        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr38
+                0x10007384        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr30
+                0x10007388        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr22
+                0x1000738c        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr182
-                0x10007378        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x1000737c                        __binary_info_end = .
+                0x10007390        0x4 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10007394                        __binary_info_end = .
 
-.rel.dyn        0x1000737c        0x0
- .rel.iplt      0x1000737c        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x1000737c                        . = ALIGN (0x4)
+.rel.dyn        0x10007394        0x0
+ .rel.iplt      0x10007394        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10007394                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2819,7 +2819,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x20000000       0xc0 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0xe28 load address 0x1000737c
+.data           0x200000c0      0xe28 load address 0x10007394
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2955,36 +2955,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x20000ee8                        . = ALIGN (0x4)
                 0x20000ee8                        __data_end__ = .
-                0x1000737c                        __etext = LOADADDR (.data)
+                0x10007394                        __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x20000ee8        0x0 load address 0x100081a4
+                0x20000ee8        0x0 load address 0x100081bc
  .tm_clone_table
                 0x20000ee8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000ee8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000ee8        0x0 load address 0x100081a4
+.igot.plt       0x20000ee8        0x0 load address 0x100081bc
  .igot.plt      0x20000ee8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000ee8        0x0 load address 0x100081a4
+                0x20000ee8        0x0 load address 0x100081bc
                 0x20000ee8                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100081a4
+.scratch_x      0x20040000        0x0 load address 0x100081bc
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x100081a4                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100081bc                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100081a4
+.scratch_y      0x20041000        0x0 load address 0x100081bc
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x100081a4                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100081bc                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000ee8      0xd94
                 0x20000ee8                        . = ALIGN (0x4)
@@ -3108,8 +3108,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100081a4        0x0
-                0x100081a4                        PROVIDE (__flash_binary_end = .)
+.flash_end      0x100081bc        0x0
+                0x100081bc                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3207,7 +3207,7 @@ LOAD CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardwar
 LOAD CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
 LOAD CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 LOAD CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-LOAD /tmp/cclzK8nK.o
+LOAD /tmp/ccZtegR4.o
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3327,7 +3327,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000804       0x2c CMakeFiles/mpu6050_i2c.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .ARM.attributes
-                0x00000830       0x22 /tmp/cclzK8nK.o
+                0x00000830       0x22 /tmp/ccZtegR4.o
  .ARM.attributes
                 0x00000852       0x1e /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
