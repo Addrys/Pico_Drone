@@ -1,5 +1,5 @@
 
-/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf:     file format elf32-littlearm
+/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -9,18 +9,18 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   2 .debug_line   000000ed  00000000  00000000  00001012  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  3 .debug_line_str 00000110  00000000  00000000  000010ff  2**0
+  3 .debug_line_str 00000129  00000000  00000000  000010ff  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  4 .debug_info   00000025  00000000  00000000  0000120f  2**0
+  4 .debug_info   00000025  00000000  00000000  00001228  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  5 .debug_abbrev 00000014  00000000  00000000  00001234  2**0
+  5 .debug_abbrev 00000014  00000000  00000000  0000124d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  6 .debug_aranges 00000020  00000000  00000000  00001248  2**3
+  6 .debug_aranges 00000020  00000000  00000000  00001268  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  7 .debug_str    00000098  00000000  00000000  00001268  2**0
+  7 .debug_str    000000b1  00000000  00000000  00001288  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
-/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf:     file format elf32-littlearm
+/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf:     file format elf32-littlearm
 
 
 Disassembly of section .text:

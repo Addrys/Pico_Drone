@@ -28,9 +28,9 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_dri
  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
  /usr/include/newlib/assert.h \
  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
- /home/adrian/pico/PicoDrone/build/generated/pico_base/pico/version.h \
+ /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/generated/pico_base/pico/version.h \
  /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /home/adrian/pico/PicoDrone/build/generated/pico_base/pico/config_autogen.h \
+ /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/generated/pico_base/pico/config_autogen.h \
  /home/adrian/pico/pico-sdk/src/boards/include/boards/pico_w.h \
  /home/adrian/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
@@ -61,7 +61,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_dri
  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
- /home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h \
+ /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h \
  /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43.h \
  /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_config.h \
  /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/include/cyw43_configport.h \

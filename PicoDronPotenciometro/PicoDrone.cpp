@@ -5,7 +5,10 @@
 
 #include <stdio.h>
 
-constexpr uint PIN_OUT = 0;
+#define PWM1 0
+#define PWM2 5
+#define PWM3 9
+#define PWM4 13
 
 int main()
 {
@@ -15,27 +18,52 @@ int main()
     adc_init();
     adc_gpio_init(26);
 
-    gpio_set_function(PIN_OUT, GPIO_FUNC_PWM);  /// Set the pin 0 to be PWM
-    auto slice   = pwm_gpio_to_slice_num(PIN_OUT);
-    auto channel = pwm_gpio_to_channel(PIN_OUT);
-
     #define LED_PIN 16
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
     gpio_put(LED_PIN, 1);
 
-    pwm_set_clkdiv(slice, 256.0f);  /// Setting the divider to slow down the clock
-    pwm_set_wrap(slice, 32550);      ///wrap para los 67ms 
-    pwm_set_enabled(slice, true);
+//--------------DEFINIMOS LOS CANELES PWM -----------
+    gpio_set_function(PWM1, GPIO_FUNC_PWM);  /// Set the pin 0 to be PWM
+    auto slice_1   = pwm_gpio_to_slice_num(PWM1);
+    auto channel_1 = pwm_gpio_to_channel(PWM1);
+
+    pwm_set_clkdiv(slice_1, 256.0f);  /// Setting the divider to slow down the clock
+    pwm_set_wrap(slice_1, 32550);      ///wrap para los 67ms 
+    pwm_set_enabled(slice_1, true);
+//-----------------------------------------------------------
+    gpio_set_function(PWM2, GPIO_FUNC_PWM);  /// Set the pin 0 to be PWM
+    auto slice_2   = pwm_gpio_to_slice_num(PWM2);
+    auto channel_2 = pwm_gpio_to_channel(PWM2);
+
+    pwm_set_clkdiv(slice_2, 256.0f);  /// Setting the divider to slow down the clock
+    pwm_set_wrap(slice_2, 32550);      ///wrap para los 67ms 
+    pwm_set_enabled(slice_2, true);
+//-----------------------------------------------------------------
+    gpio_set_function(PWM3, GPIO_FUNC_PWM);  /// Set the pin 0 to be PWM
+    auto slice_3   = pwm_gpio_to_slice_num(PWM3);
+    auto channel_3 = pwm_gpio_to_channel(PWM3);
+
+    pwm_set_clkdiv(slice_3, 256.0f);  /// Setting the divider to slow down the clock
+    pwm_set_wrap(slice_3, 32550);      ///wrap para los 67ms 
+    pwm_set_enabled(slice_3, true);
+//---------------------------------------------------------------
+    gpio_set_function(PWM4, GPIO_FUNC_PWM);  /// Set the pin 0 to be PWM
+    auto slice_4   = pwm_gpio_to_slice_num(PWM4);
+    auto channel_4 = pwm_gpio_to_channel(PWM4);
+
+    pwm_set_clkdiv(slice_4, 256.0f);  /// Setting the divider to slow down the clock
+    pwm_set_wrap(slice_4, 32550);      ///wrap para los 67ms 
+    pwm_set_enabled(slice_4, true);
+//..------------------------------------------------------------
 
     //vamos a salir de los limities un poco llendo desde menos de 1000us (nivel480) a algo más de 2000us (nivel 1000)
     uint16_t level = 480;
 
-    bool ascenso = true;
-     gpio_put(LED_PIN, 1);
+    gpio_put(LED_PIN, 1);
 
-     uint16_t valor = 0;
-     float us_deseados;
+    uint16_t valor = 0;
+    float us_deseados;
     while(true){
         //Leemos el valor raw del potenciometro
         uint16_t raw_value = adc_read();
@@ -62,7 +90,11 @@ int main()
 
         if(us_deseados > 1.8){ us_deseados = us_deseados * 1.1;}
         level = (489*us_deseados);
-        pwm_set_chan_level(slice, channel, level); 
+        pwm_set_chan_level(slice_1, channel_1, level); 
+        pwm_set_chan_level(slice_2, channel_2, level); 
+        pwm_set_chan_level(slice_3, channel_3, level); 
+        pwm_set_chan_level(slice_4, channel_4, level); 
+        
        // printf("RAW: %d\t Valor: %d\t level: %d\t, ms:%f\n",raw_value,valor,level,us_deseados);
 
 

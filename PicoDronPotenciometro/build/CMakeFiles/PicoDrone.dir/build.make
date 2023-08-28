@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adrian/pico/PicoDrone
+CMAKE_SOURCE_DIR = /home/adrian/pico/ProyectoDron/PicoDronPotenciometro
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adrian/pico/PicoDrone/build
+CMAKE_BINARY_DIR = /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PicoDrone.dir/depend.make
@@ -70,23 +70,23 @@ include CMakeFiles/PicoDrone.dir/progress.make
 include CMakeFiles/PicoDrone.dir/flags.make
 
 CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj: CMakeFiles/PicoDrone.dir/flags.make
-CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj: /home/adrian/pico/PicoDrone/PicoDrone.cpp
+CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj: /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/PicoDrone.cpp
 CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj -MF CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj.d -o CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj -c /home/adrian/pico/PicoDrone/PicoDrone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj -MF CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj.d -o CMakeFiles/PicoDrone.dir/PicoDrone.cpp.obj -c /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/PicoDrone.cpp
 
 CMakeFiles/PicoDrone.dir/PicoDrone.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PicoDrone.dir/PicoDrone.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/pico/PicoDrone/PicoDrone.cpp > CMakeFiles/PicoDrone.dir/PicoDrone.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/PicoDrone.cpp > CMakeFiles/PicoDrone.dir/PicoDrone.cpp.i
 
 CMakeFiles/PicoDrone.dir/PicoDrone.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PicoDrone.dir/PicoDrone.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/pico/PicoDrone/PicoDrone.cpp -o CMakeFiles/PicoDrone.dir/PicoDrone.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/PicoDrone.cpp -o CMakeFiles/PicoDrone.dir/PicoDrone.cpp.s
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -100,7 +100,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdlib/st
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -114,7 +114,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -128,7 +128,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -142,7 +142,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -156,7 +156,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_sync/
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -169,7 +169,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/i
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -183,7 +183,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/i
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -197,7 +197,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/sem.c.s:
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -211,7 +211,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/lock_cor
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -225,7 +225,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/mutex.c.
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -239,7 +239,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_sync/critical
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -253,7 +253,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/time.c.s
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -267,7 +267,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_time/timeout_
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -281,7 +281,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_timer
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -295,7 +295,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/datetime
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -309,7 +309,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj: /home/adrian/pico/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj -c /home/adrian/pico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -323,7 +323,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -337,7 +337,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -351,7 +351,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clock
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -365,7 +365,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/p
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -379,7 +379,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_vreg/
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -393,7 +393,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_watch
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -406,7 +406,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_xosc/
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -420,7 +420,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_divid
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -434,7 +434,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_runtime/r
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -447,7 +447,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_printf/pr
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -461,7 +461,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bit_ops/b
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -474,7 +474,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_bootrom/b
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.i: cmake_force
@@ -487,7 +487,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_divider/d
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
@@ -501,7 +501,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/do
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -515,7 +515,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/do
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -528,7 +528,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/do
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
@@ -541,7 +541,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_double/do
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -554,7 +554,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_int64_ops
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
@@ -568,7 +568,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/flo
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -582,7 +582,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/flo
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -595,7 +595,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/flo
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
@@ -609,7 +609,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_float/flo
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -622,7 +622,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/pi
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -635,7 +635,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_mem_ops/m
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
@@ -649,7 +649,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -663,7 +663,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -677,7 +677,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -691,7 +691,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio/std
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -705,7 +705,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -719,7 +719,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -733,7 +733,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -747,7 +747,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_unique_id
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -761,7 +761,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_flash
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -775,7 +775,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/rasp
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -789,7 +789,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/portable/rasp
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -803,7 +803,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -817,7 +817,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/device/usbd_c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -831,7 +831,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/audio/a
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -845,7 +845,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -859,7 +859,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -873,7 +873,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -887,7 +887,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/hid/hid
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -901,7 +901,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/midi/mi
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -915,7 +915,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/msc/msc
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -929,7 +929,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ecm
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -943,7 +943,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -957,7 +957,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -971,7 +971,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/vendor/
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -985,7 +985,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/class/video/v
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -999,7 +999,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/tusb.c.s: cma
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -c /home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1013,7 +1013,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/tinyusb/src/common/tusb_f
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1027,7 +1027,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp204
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1041,7 +1041,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1055,7 +1055,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/p
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i: cmake_force
@@ -1069,7 +1069,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_inter
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
@@ -1083,7 +1083,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/a
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i: cmake_force
@@ -1097,7 +1097,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arc
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i: cmake_force
@@ -1111,7 +1111,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arc
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i: cmake_force
@@ -1125,7 +1125,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arc
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i: cmake_force
@@ -1139,7 +1139,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arc
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i: cmake_force
@@ -1153,7 +1153,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_dri
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i: cmake_force
@@ -1167,7 +1167,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i: cmake_force
@@ -1181,7 +1181,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_st
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i: cmake_force
@@ -1195,7 +1195,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lw
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i: cmake_force
@@ -1209,7 +1209,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ct
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i: cmake_force
@@ -1223,7 +1223,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_dri
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i: cmake_force
@@ -1237,7 +1237,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_dri
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1251,7 +1251,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/d
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i: cmake_force
@@ -1265,7 +1265,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_excep
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i: cmake_force
@@ -1279,7 +1279,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_dri
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i: cmake_force
@@ -1293,7 +1293,7 @@ CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_con
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: CMakeFiles/PicoDrone.dir/flags.make
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: CMakeFiles/PicoDrone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj -MF CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj.d -o CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 
 CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i: cmake_force
@@ -1491,13 +1491,13 @@ PicoDrone.elf: CMakeFiles/PicoDrone.dir/home/adrian/pico/pico-sdk/src/rp2_common
 PicoDrone.elf: CMakeFiles/PicoDrone.dir/build.make
 PicoDrone.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 PicoDrone.elf: CMakeFiles/PicoDrone.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/pico/PicoDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Linking CXX executable PicoDrone.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Linking CXX executable PicoDrone.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PicoDrone.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/arm-none-eabi-objcopy -Oihex /home/adrian/pico/PicoDrone/build/PicoDrone.elf PicoDrone.hex
-	/usr/bin/arm-none-eabi-objcopy -Obinary /home/adrian/pico/PicoDrone/build/PicoDrone.elf PicoDrone.bin
-	/usr/bin/arm-none-eabi-objdump -h /home/adrian/pico/PicoDrone/build/PicoDrone.elf > PicoDrone.dis
-	/usr/bin/arm-none-eabi-objdump -d /home/adrian/pico/PicoDrone/build/PicoDrone.elf >> PicoDrone.dis
-	elf2uf2/elf2uf2 /home/adrian/pico/PicoDrone/build/PicoDrone.elf PicoDrone.uf2
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/PicoDrone.elf PicoDrone.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/PicoDrone.elf PicoDrone.bin
+	/usr/bin/arm-none-eabi-objdump -h /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/PicoDrone.elf > PicoDrone.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/PicoDrone.elf >> PicoDrone.dis
+	elf2uf2/elf2uf2 /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/PicoDrone.elf PicoDrone.uf2
 
 # Rule to build all files generated by this target.
 CMakeFiles/PicoDrone.dir/build: PicoDrone.elf
@@ -1508,6 +1508,6 @@ CMakeFiles/PicoDrone.dir/clean:
 .PHONY : CMakeFiles/PicoDrone.dir/clean
 
 CMakeFiles/PicoDrone.dir/depend:
-	cd /home/adrian/pico/PicoDrone/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/pico/PicoDrone /home/adrian/pico/PicoDrone /home/adrian/pico/PicoDrone/build /home/adrian/pico/PicoDrone/build /home/adrian/pico/PicoDrone/build/CMakeFiles/PicoDrone.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/pico/ProyectoDron/PicoDronPotenciometro /home/adrian/pico/ProyectoDron/PicoDronPotenciometro /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build /home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles/PicoDrone.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PicoDrone.dir/depend
 

@@ -1142,7 +1142,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PicoDrone::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PicoDrone-Debug-7f12f9fc008edab59f77.json",
+					"jsonFile" : "target-PicoDrone-Debug-c29024dd991f619a3d74.json",
 					"name" : "PicoDrone",
 					"projectIndex" : 0
 				},
@@ -1156,7 +1156,7 @@
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-fe38f73a53e9b2502f89.json",
+					"jsonFile" : "target-bs2_default-Debug-c7d55a6c459e5202015d.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
@@ -1187,8 +1187,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/adrian/pico/PicoDrone/build",
-		"source" : "/home/adrian/pico/PicoDrone"
+		"build" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build",
+		"source" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro"
 	},
 	"version" : 
 	{

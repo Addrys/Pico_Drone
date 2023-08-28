@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/home/adrian/pico/pico-sdk/tools/pioasm"
-  "/home/adrian/pico/PicoDrone/build/pioasm"
-  "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm"
-  "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
-  "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
-  "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
-  "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
+  "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pioasm"
+  "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm"
+  "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
+  "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
+  "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
+  "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp${cfgdir}") # cfgdir has leading slash
 endif()

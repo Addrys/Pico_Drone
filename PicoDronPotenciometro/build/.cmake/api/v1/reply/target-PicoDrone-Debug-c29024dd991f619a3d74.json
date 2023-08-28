@@ -382,11 +382,11 @@
 			[
 				{
 					"backtrace" : 21,
-					"path" : "/home/adrian/pico/PicoDrone"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro"
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/adrian/pico/PicoDrone/.."
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/.."
 				},
 				{
 					"backtrace" : 2,
@@ -402,7 +402,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/adrian/pico/PicoDrone/build/generated/pico_base"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -622,7 +622,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"path" : "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
 				}
 			],
 			"language" : "CXX",
@@ -854,11 +854,11 @@
 			[
 				{
 					"backtrace" : 21,
-					"path" : "/home/adrian/pico/PicoDrone"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro"
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/adrian/pico/PicoDrone/.."
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/.."
 				},
 				{
 					"backtrace" : 2,
@@ -874,7 +874,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/adrian/pico/PicoDrone/build/generated/pico_base"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -1094,7 +1094,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"path" : "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
 				}
 			],
 			"language" : "C",
@@ -1400,11 +1400,11 @@
 			[
 				{
 					"backtrace" : 21,
-					"path" : "/home/adrian/pico/PicoDrone"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro"
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/adrian/pico/PicoDrone/.."
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/.."
 				},
 				{
 					"backtrace" : 2,
@@ -1420,7 +1420,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/adrian/pico/PicoDrone/build/generated/pico_base"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -1640,7 +1640,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"path" : "/home/adrian/pico/PicoDrone/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
+					"path" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
 				}
 			],
 			"language" : "ASM",

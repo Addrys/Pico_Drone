@@ -1,3 +1,3 @@
-/home/adrian/pico/PicoDrone/build/pioasm/CMakeFiles/pioasm.dir
-/home/adrian/pico/PicoDrone/build/pioasm/CMakeFiles/edit_cache.dir
-/home/adrian/pico/PicoDrone/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pioasm/CMakeFiles/pioasm.dir
+/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pioasm/CMakeFiles/edit_cache.dir
+/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pioasm/CMakeFiles/rebuild_cache.dir

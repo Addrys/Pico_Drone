@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/adrian/pico/PicoDrone/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/adrian/pico/PicoDrone/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/adrian/pico/PicoDrone/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

@@ -195,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/adrian/pico/PicoDrone/build"
+			"value" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -295,10 +295,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/arm-none-eabi-g++"
 		},
 		{
@@ -423,10 +423,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/arm-none-eabi-gcc"
 		},
 		{
@@ -654,10 +654,6 @@
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
 				}
@@ -687,7 +683,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/adrian/pico/PicoDrone/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -747,7 +743,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/adrian/pico/PicoDrone"
+			"value" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1483,7 +1479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " /home/adrian/pico/pico-sdk/src/rp2_common/cmsis /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs /home/adrian/pico/pico-sdk/src/rp2_common/cmsis /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs /home/adrian/pico/pico-sdk/src/rp2_common/cmsis /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs /home/adrian/pico/pico-sdk/src/rp2_common/cmsis /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " /home/adrian/pico/pico-sdk/src/rp2_common/cmsis /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1687,7 +1683,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/adrian/pico/PicoDrone/build"
+			"value" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build"
 		},
 		{
 			"name" : "PicoDrone_IS_TOP_LEVEL",
@@ -1711,7 +1707,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/adrian/pico/PicoDrone"
+			"value" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro"
 		},
 		{
 			"name" : "_Python3_Compiler_REASON_FAILURE",
@@ -1774,18 +1770,6 @@
 			"value" : "4c8bfa8951e99fa32e4000a94f8c04a2"
 		},
 		{
-			"name" : "_Python3_Interpreter_REASON_FAILURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Interpreter reason failure"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
 			"name" : "_Python3_NumPy_REASON_FAILURE",
 			"properties" : 
 			[
@@ -1819,7 +1803,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/adrian/pico/PicoDrone/build/pico-sdk"
+			"value" : "/home/adrian/pico/ProyectoDron/PicoDronPotenciometro/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_IS_TOP_LEVEL",
