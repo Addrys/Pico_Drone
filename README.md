@@ -8,3 +8,7 @@ pwm con raspberry: https://cocode.se/linux/raspberry/pwm.html#orgf2a00a2
 
 #Prueba de integracion de los 4 motores
 ![PruebaMotores](https://github.com/Addrys/ProyectoDrone/blob/0d5b3327bc5ed68c19ad7d15e08b4d21ac9d5ea6/PruebaConjuntaMotores.jpeg)
+
+#Reparacion del motor 3
+![Reparacion_M3](https://github.com/Addrys/ProyectoDrone/assets/93978561/81a4b155-ede7-4746-b9c9-45762e3086c7)
+
