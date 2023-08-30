@@ -9,8 +9,8 @@ void controladorPWM::inicializar(){
     slice = pwm_gpio_to_slice_num(gpio_pwm);
     channel = pwm_gpio_to_channel(gpio_pwm);
 
-    pwm_set_clkdiv(slice, 256.0f); //Divisor para frenar el clk del RP2040 (máx valor 8 bits = 256)
-    pwm_set_wrap(slice, 32550);
+    pwm_set_clkdiv(slice, 125.0f); //Divisor para frenar el clk del RP2040 (máx valor 8 bits = 256)
+    pwm_set_wrap(slice, 3000);
     pwm_set_enabled(slice, true);
 }
 

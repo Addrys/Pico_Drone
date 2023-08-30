@@ -186,7 +186,7 @@ void mpu6050_run(){
     //Ajustamos los coeficientes del controlador PID
     float kp = 2.0;
     float ki = 0.0; //0.1
-    float kd = 2.0; //1.0
+    float kd = 1.0; //1.0
     //creamos los controladores
     controladorPID pidMotor1_roll(kp,ki,kd,true);
     controladorPID pidMotor2_roll(kp,ki,kd,true);//Roll + para M2
@@ -197,11 +197,11 @@ void mpu6050_run(){
     controladorPID pidMotor3_pitch(kp,ki,kd,true);
     controladorPID pidMotor4_pitch(kp,ki,kd,false);
 
-    //PWM 1,5,9,13
-    controladorPWM pwm_motor1(1);
-    controladorPWM pwm_motor2(6);
-    controladorPWM pwm_motor3(9);
-    controladorPWM pwm_motor4(13);
+    //PWM 0,7pi,9,13
+    controladorPWM pwm_motor1(19);
+    controladorPWM pwm_motor2(7);
+    controladorPWM pwm_motor3(20);
+    controladorPWM pwm_motor4(0);
 
     pwm_motor1.inicializar();
     pwm_motor2.inicializar();
@@ -246,10 +246,9 @@ void mpu6050_run(){
     tiempo_previo = time_us_32();
 
     uint16_t valor = 0;
-    float us_deseados, ms_m1, ms_m2, ms_m3, ms_m4;
+    float us_deseados;
 
-    float level_m1, level_m2, level_m3, level_m4;
-    uint16_t level = 480;
+    uint16_t level = 480, us_m1, us_m2, us_m3, us_m4;
     while (1) {
         
         mpu6050_read_raw(acceleration, gyro, &temp);
@@ -292,19 +291,19 @@ void mpu6050_run(){
             
             ctrlM1_roll = pidMotor1_roll.computar(0,ang_x);
             ctrlM1_pitch = pidMotor1_pitch.computar(0, ang_y);
-            ctrlM1 = ctrlM1_roll + ctrlM1_pitch;
+            ctrlM1 = (ctrlM1_roll + ctrlM1_pitch)/2;
 
             ctrlM2_roll = pidMotor2_roll.computar(0,ang_x);
             ctrlM2_pitch = pidMotor2_pitch.computar(0, ang_y);
-            ctrlM2 = ctrlM2_roll + ctrlM2_pitch;
+            ctrlM2 = (ctrlM2_roll + ctrlM2_pitch)/2;
             
             ctrlM3_roll = pidMotor3_roll.computar(0,ang_x);
             ctrlM3_pitch = pidMotor3_pitch.computar(0, ang_y);
-            ctrlM3 = ctrlM3_roll + ctrlM3_pitch;
+            ctrlM3 = (ctrlM3_roll + ctrlM3_pitch)/2;
 
             ctrlM4_roll = pidMotor4_roll.computar(0,ang_x);
             ctrlM4_pitch = pidMotor4_pitch.computar(0, ang_y);
-            ctrlM4 = ctrlM4_roll + ctrlM4_pitch;
+            ctrlM4 = (ctrlM4_roll + ctrlM4_pitch)/2;
            
            //printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1_pitch,ctrlM2_pitch,ctrlM3_pitch,ctrlM4_pitch);
             
@@ -318,41 +317,57 @@ void mpu6050_run(){
                 }
         
 
-            valor =((raw_value-500)/35);
-            //uint16_t us_deseados = 1000 + valor*4;
-            us_deseados = 100 + (valor);
-            us_deseados = us_deseados/100;
+            valor =((raw_value-500)/35); //Valor = [0,100] en funcion del potenciometro
+           // printf("valor: %d\n",valor);
+            us_deseados = 800 + 10*valor;
 
-            ms_m1 = us_deseados + (ctrlM1/200);
-            ms_m2 = us_deseados + (ctrlM2/200);
-            ms_m3 = us_deseados + (ctrlM3/200);
-            ms_m4 = us_deseados + (ctrlM4/200);
+            //us_deseados = 100 + (valor);
 
-            level_m1 = (489*ms_m1);
-            level_m2 = (489*ms_m2);
-            level_m3 = (489*ms_m3);
-            level_m4 = (489*ms_m4);
+            us_m1 = us_deseados + (ctrlM1*8);
+            us_m2 = us_deseados + (ctrlM2*8);
+            us_m3 = us_deseados + (ctrlM3*8);
+            us_m4 = us_deseados + (ctrlM4*8);
 
+            /*
+            level_m1 = (us_deseados);
+            pwm_motor1.controlar(level_m1);
+
+            level_m2 = (1000*ms_m2);
+            level_m3 = (1000*ms_m3);
+            level_m4 = (1000*ms_m4);*/
+            if(us_m1 < 0 || us_m1 > 3000){
+                us_m1 = 0;
+            }
+            if(us_m2 < 0 || us_m2 > 3000){
+                us_m2 = 0;
+            }
+            if(us_m3 < 0 || us_m3 > 3000){
+                us_m3 = 0;
+            }
+            if(us_m4 < 0 || us_m4 > 3000){
+                us_m4 = 0;
+            }
             
 
             
 
             
             //printf("\n%f\n",us_deseados);
-            if(ms_m1 < 2 && ms_m1 > -2){
-                printf("%6.4f %6.4f \n %6.4f %6.4f \n", ms_m1,ms_m2,ms_m3,ms_m4);
-                pwm_motor1.controlar(level_m1);
-                pwm_motor2.controlar(level_m2);
-                pwm_motor3.controlar(level_m3);
-                pwm_motor4.controlar(level_m4);
-                actual = time_us_32();
-                tiempo_pasado = actual - pasado;
-                printf("Tiempo desde el último pulso: %u microsegundos\n", tiempo_pasado);
-
+            if(us_m1 < 2000 && us_m1 > -2000){
+                printf("\n%d %d \n %d %d \n", us_m1,us_m2,us_m3,us_m4);
+                //printf("\n valor: %d", us_m1);
+                pwm_motor1.controlar(us_m1);
+                pwm_motor2.controlar(us_m2);
+                pwm_motor3.controlar(us_m3);
+                pwm_motor4.controlar(us_m4);
+                //actual = time_us_32();
+               // tiempo_pasado = actual - pasado;
+              //  printf("Tiempo desde el último pulso: %u microsegundos\n", tiempo_pasado);
+                //pasado = actual;
             }else{
-                printf("%f Calculando...\n", ms_m1);
+                printf("%f Calculando...\n", us_m1);
             }
-
+        
         }else{
             printf("INFINITO: pitch(X): %f, roll(y): %f\n",ang_x,ang_y);
         }
