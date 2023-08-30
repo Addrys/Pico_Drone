@@ -8,9 +8,16 @@
 #include <math.h>
 #include <time.h>
 #include "pid.h"
+#include "pwm.h"
+#include "hardware/timer.h"
+
+#include "hardware/adc.h"
 
 static int addr = 0x68;
 int write_block,read_block = 0;
+
+//para medir tiempos 
+volatile uint32_t actual = 0, pasado = 0, tiempo_pasado;
 
 static void mpu6050_reset() {
     // Two byte reset. First byte register, second byte data
@@ -173,10 +180,13 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp) {
 
 
 void mpu6050_run(){
+    adc_init();
+    adc_gpio_init(26);
+
     //Ajustamos los coeficientes del controlador PID
     float kp = 2.0;
-    float ki = 0; //0.1
-    float kd = 1.0; //1.0
+    float ki = 0.0; //0.1
+    float kd = 2.0; //1.0
     //creamos los controladores
     controladorPID pidMotor1_roll(kp,ki,kd,true);
     controladorPID pidMotor2_roll(kp,ki,kd,true);//Roll + para M2
@@ -186,6 +196,18 @@ void mpu6050_run(){
     controladorPID pidMotor2_pitch(kp,ki,kd,false);//Pitch - para M2
     controladorPID pidMotor3_pitch(kp,ki,kd,true);
     controladorPID pidMotor4_pitch(kp,ki,kd,false);
+
+    //PWM 1,5,9,13
+    controladorPWM pwm_motor1(1);
+    controladorPWM pwm_motor2(6);
+    controladorPWM pwm_motor3(9);
+    controladorPWM pwm_motor4(13);
+
+    pwm_motor1.inicializar();
+    pwm_motor2.inicializar();
+    pwm_motor3.inicializar();
+    pwm_motor4.inicializar();
+    
 
     volatile float ctrlM1_roll, ctrlM2_roll, ctrlM3_roll, ctrlM4_roll;
     volatile float ctrlM1_pitch, ctrlM2_pitch, ctrlM3_pitch, ctrlM4_pitch;
@@ -222,6 +244,12 @@ void mpu6050_run(){
     //Añadimos el manejador para el tiempo
     sleep_ms(1000);
     tiempo_previo = time_us_32();
+
+    uint16_t valor = 0;
+    float us_deseados, ms_m1, ms_m2, ms_m3, ms_m4;
+
+    float level_m1, level_m2, level_m3, level_m4;
+    uint16_t level = 480;
     while (1) {
         
         mpu6050_read_raw(acceleration, gyro, &temp);
@@ -279,7 +307,52 @@ void mpu6050_run(){
             ctrlM4 = ctrlM4_roll + ctrlM4_pitch;
            
            //printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1_pitch,ctrlM2_pitch,ctrlM3_pitch,ctrlM4_pitch);
-            printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1,ctrlM2,ctrlM3,ctrlM4);
+            
+
+            uint16_t raw_value = adc_read();
+
+            if(raw_value <= 500){
+                raw_value = 500;
+            }else if(raw_value >= 4000){
+                raw_value = 4000;
+                }
+        
+
+            valor =((raw_value-500)/35);
+            //uint16_t us_deseados = 1000 + valor*4;
+            us_deseados = 100 + (valor);
+            us_deseados = us_deseados/100;
+
+            ms_m1 = us_deseados + (ctrlM1/200);
+            ms_m2 = us_deseados + (ctrlM2/200);
+            ms_m3 = us_deseados + (ctrlM3/200);
+            ms_m4 = us_deseados + (ctrlM4/200);
+
+            level_m1 = (489*ms_m1);
+            level_m2 = (489*ms_m2);
+            level_m3 = (489*ms_m3);
+            level_m4 = (489*ms_m4);
+
+            
+
+            
+
+            
+            //printf("\n%f\n",us_deseados);
+            if(ms_m1 < 2 && ms_m1 > -2){
+                printf("%6.4f %6.4f \n %6.4f %6.4f \n", ms_m1,ms_m2,ms_m3,ms_m4);
+                pwm_motor1.controlar(level_m1);
+                pwm_motor2.controlar(level_m2);
+                pwm_motor3.controlar(level_m3);
+                pwm_motor4.controlar(level_m4);
+                actual = time_us_32();
+                tiempo_pasado = actual - pasado;
+                printf("Tiempo desde el último pulso: %u microsegundos\n", tiempo_pasado);
+
+            }else{
+                printf("%f Calculando...\n", ms_m1);
+            }
+
         }else{
             printf("INFINITO: pitch(X): %f, roll(y): %f\n",ang_x,ang_y);
         }

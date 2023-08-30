@@ -1094,10 +1094,24 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
+CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
+CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+
+CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i: cmake_force
@@ -1111,7 +1125,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i: cmake_force
@@ -1125,7 +1139,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i: cmake_force
@@ -1139,7 +1153,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i: cmake_force
@@ -1153,7 +1167,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_a
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i: cmake_force
@@ -1167,7 +1181,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i: cmake_force
@@ -1181,7 +1195,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i: cmake_force
@@ -1195,7 +1209,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i: cmake_force
@@ -1209,7 +1223,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj -c /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i: cmake_force
@@ -1223,7 +1237,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43_
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i: cmake_force
@@ -1237,7 +1251,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i: cmake_force
@@ -1251,7 +1265,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1265,7 +1279,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_dma
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i: cmake_force
@@ -1279,7 +1293,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_exc
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i: cmake_force
@@ -1293,7 +1307,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_d
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i: cmake_force
@@ -1307,7 +1321,7 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: CMakeFiles/mpu_pid_pwm.dir/flags.make
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: CMakeFiles/mpu_pid_pwm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj -MF CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj.d -o CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj -c /home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i: cmake_force
@@ -1394,6 +1408,7 @@ mpu_pid_pwm_OBJECTS = \
 "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
 "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" \
 "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" \
+"CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" \
 "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj" \
 "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj" \
 "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj" \
@@ -1488,6 +1503,7 @@ mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/lib/tinyus
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
@@ -1507,7 +1523,7 @@ mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_co
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/build.make
 mpu_pid_pwm.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 mpu_pid_pwm.elf: CMakeFiles/mpu_pid_pwm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Linking CXX executable mpu_pid_pwm.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Linking CXX executable mpu_pid_pwm.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpu_pid_pwm.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/mpu_pid_pwm.elf mpu_pid_pwm.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /home/adrian/pico/ProyectoDron/MPU_PID_PWM/build/mpu_pid_pwm.elf mpu_pid_pwm.bin

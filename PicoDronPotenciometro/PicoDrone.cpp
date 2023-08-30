@@ -88,7 +88,6 @@ int main()
         us_deseados = 100 + (valor);
         us_deseados = us_deseados/100;
 
-        if(us_deseados > 1.8){ us_deseados = us_deseados * 1.1;}
         level = (489*us_deseados);
         pwm_set_chan_level(slice_1, channel_1, level); 
         pwm_set_chan_level(slice_2, channel_2, level); 

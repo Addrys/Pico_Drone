@@ -1650,6 +1650,51 @@ CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.
   /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
   /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
+CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c \
+  /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/adrian/pico/pico-sdk/src/boards/include/boards/pico_w.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h
+
 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c \
   /home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
   /home/adrian/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -4056,7 +4101,14 @@ CMakeFiles/mpu_pid_pwm.dir/mpu.cpp.obj: /home/adrian/pico/ProyectoDron/MPU_PID_P
   /usr/include/newlib/c++/12.2.1/tr1/riemann_zeta.tcc \
   /usr/include/newlib/time.h \
   /usr/include/newlib/machine/time.h \
-  /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.h
+  /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.h \
+  /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pwm.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
+  /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
+  /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
 
 CMakeFiles/mpu_pid_pwm.dir/pid.cpp.obj: /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.cpp \
   /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.h \
@@ -4222,15 +4274,15 @@ CMakeFiles/mpu_pid_pwm.dir/pwm.cpp.obj: /home/adrian/pico/ProyectoDron/MPU_PID_P
   /home/adrian/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
 
 
+/home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.cpp:
+
 /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h:
 
 /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h:
 
-/home/adrian/pico/ProyectoDron/MPU_PID_PWM/pwm.h:
-
 /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pwm.cpp:
 
-/home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.cpp:
+/home/adrian/pico/ProyectoDron/MPU_PID_PWM/pwm.h:
 
 /home/adrian/pico/ProyectoDron/MPU_PID_PWM/mpu.cpp:
 
@@ -4323,6 +4375,12 @@ CMakeFiles/mpu_pid_pwm.dir/pwm.cpp.obj: /home/adrian/pico/ProyectoDron/MPU_PID_P
 /home/adrian/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
 /home/adrian/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
+
+/home/adrian/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
+
+/home/adrian/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
+
+/home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
 
 /home/adrian/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
 
@@ -4586,8 +4644,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
 
-/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
-
 /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
 /home/adrian/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
@@ -4674,6 +4730,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/machine/_time.h:
 
+/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c:
+
 /usr/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h:
 
 /home/adrian/pico/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:
@@ -4715,6 +4773,12 @@ generated/pico_base/pico/config_autogen.h:
 /home/adrian/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:
 
 /home/adrian/pico/pico-sdk/src/common/pico_util/include/pico/util/queue.h:
+
+/home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h:
+
+/home/adrian/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
+
+/home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h:
 
 /home/adrian/pico/pico-sdk/lib/cyw43-driver/src/cyw43.h:
 
@@ -4760,6 +4824,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/adrian/pico/pico-sdk/src/rp2_common/hardware_exception/include/hardware/exception.h:
 
+/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h:
+
 /home/adrian/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c:
 
 /home/adrian/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h:
@@ -4770,6 +4836,12 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
 
+/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
+
+/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c:
+
+/home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
+
 /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
 
 /home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:
@@ -4779,8 +4851,6 @@ generated/pico_base/pico/config_autogen.h:
 /home/adrian/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
 
 /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
-
-/home/adrian/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
 
 /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
 
@@ -4859,13 +4929,3 @@ generated/pico_base/pico/config_autogen.h:
 /usr/include/newlib/c++/12.2.1/bits/specfun.h:
 
 /usr/include/newlib/sys/unistd.h:
-
-/home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
-
-/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c:
-
-/home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
-
-/home/adrian/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
-
-/home/adrian/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:

@@ -951,6 +951,30 @@ home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_pid_pwm.dir/build.make CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.s
 
+home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj
+
+# target to build an object file
+home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_pid_pwm.dir/build.make CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+
+home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
+
+# target to preprocess a source file
+home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_pid_pwm.dir/build.make CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
+
+# target to generate assembly for a file
+home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_pid_pwm.dir/build.make CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
@@ -2299,6 +2323,9 @@ help:
 	@echo "... home/adrian/pico/pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... home/adrian/pico/pico-sdk/src/common/pico_util/queue.i"
 	@echo "... home/adrian/pico/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj"
+	@echo "... home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
+	@echo "... home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s"

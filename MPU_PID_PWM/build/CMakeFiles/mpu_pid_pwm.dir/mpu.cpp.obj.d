@@ -108,4 +108,11 @@ CMakeFiles/mpu_pid_pwm.dir/mpu.cpp.obj: \
  /usr/include/newlib/c++/12.2.1/tr1/poly_laguerre.tcc \
  /usr/include/newlib/c++/12.2.1/tr1/riemann_zeta.tcc \
  /usr/include/newlib/time.h /usr/include/newlib/machine/time.h \
- /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.h
+ /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.h \
+ /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pwm.h \
+ /home/adrian/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
+ /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
+ /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
+ /home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
+ /home/adrian/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
+ /home/adrian/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h

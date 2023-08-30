@@ -61,6 +61,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d"
   "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj"
   "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/common/pico_util/queue.c.obj.d"
+  "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+  "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d"
   "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
   "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"

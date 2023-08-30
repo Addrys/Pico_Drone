@@ -29,8 +29,11 @@ if (TARGET tinyusb_device)
         hardware_pio
         hardware_timer
         hardware_clocks
+        hardware_adc
         hardware_pwm
         pico_cyw43_arch_none
+
+        
     )
 
 	# create map/bin/hex file etc.

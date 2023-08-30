@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "/home/adrian/pico/ProyectoDron/MPU6050"
+    "cmake.sourceDirectory": "/home/adrian/pico/ProyectoDron/MPU6050",
+    "files.associations": {
+        "compare": "cpp",
+        "cstdint": "cpp"
+    }
 }

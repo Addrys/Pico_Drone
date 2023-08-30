@@ -65,7 +65,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 37,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
@@ -541,6 +541,10 @@
 				},
 				{
 					"backtrace" : 2,
+					"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
 				},
 				{
@@ -988,6 +992,10 @@
 				},
 				{
 					"backtrace" : 2,
+					"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
 				},
 				{
@@ -1103,7 +1111,8 @@
 				86,
 				87,
 				88,
-				89
+				89,
+				90
 			]
 		},
 		{
@@ -1501,6 +1510,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/include"
 				},
 				{
 					"backtrace" : 2,
@@ -2507,7 +2520,8 @@
 				86,
 				87,
 				88,
-				89
+				89,
+				90
 			]
 		},
 		{
@@ -2972,6 +2986,12 @@
 			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
