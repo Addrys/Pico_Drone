@@ -184,9 +184,9 @@ void mpu6050_run(){
     adc_gpio_init(26);
 
     //Ajustamos los coeficientes del controlador PID
-    float kp = 2.0;
-    float ki = 0.0; //0.1
-    float kd = 1.0; //1.0
+    float kp = 0.9;
+    float ki = 0.006; //0.1
+    float kd = 0.0015; //1.0
     //creamos los controladores
     controladorPID pidMotor1_roll(kp,ki,kd,true);
     controladorPID pidMotor2_roll(kp,ki,kd,true);//Roll + para M2
@@ -305,7 +305,7 @@ void mpu6050_run(){
             ctrlM4_pitch = pidMotor4_pitch.computar(0, ang_y);
             ctrlM4 = (ctrlM4_roll + ctrlM4_pitch)/2;
            
-           //printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1_pitch,ctrlM2_pitch,ctrlM3_pitch,ctrlM4_pitch);
+           printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1,ctrlM2,ctrlM3,ctrlM4);
             
 
             uint16_t raw_value = adc_read();
@@ -322,11 +322,11 @@ void mpu6050_run(){
             us_deseados = 800 + 10*valor;
 
             //us_deseados = 100 + (valor);
-
-            us_m1 = us_deseados + (ctrlM1*8);
-            us_m2 = us_deseados + (ctrlM2*8);
-            us_m3 = us_deseados + (ctrlM3*8);
-            us_m4 = us_deseados + (ctrlM4*8);
+            
+            us_m1 = us_deseados + (ctrlM1*10);
+            us_m2 = us_deseados + (ctrlM2*10);
+            us_m3 = us_deseados + (ctrlM3*10);
+            us_m4 = us_deseados + (ctrlM4*10);
 
             /*
             level_m1 = (us_deseados);
@@ -354,7 +354,7 @@ void mpu6050_run(){
             
             //printf("\n%f\n",us_deseados);
             if(us_m1 < 2000 && us_m1 > -2000){
-                printf("\n%d %d \n %d %d \n", us_m1,us_m2,us_m3,us_m4);
+                //printf("\n%d %d \n %d %d \n", us_m1,us_m2,us_m3,us_m4);
                 //printf("\n valor: %d", us_m1);
                 pwm_motor1.controlar(us_m1);
                 pwm_motor2.controlar(us_m2);

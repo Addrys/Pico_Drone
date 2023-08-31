@@ -12,6 +12,8 @@ void controladorPWM::inicializar(){
     pwm_set_clkdiv(slice, 125.0f); //Divisor para frenar el clk del RP2040 (máx valor 8 bits = 256)
     pwm_set_wrap(slice, 3000);
     pwm_set_enabled(slice, true);
+
+    pwm_set_chan_level(slice, channel, 1000); // mandamos 1000us para activar el motor
 }
 
 void controladorPWM::controlar(uint16_t signal){
