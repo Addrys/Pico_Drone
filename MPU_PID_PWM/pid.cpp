@@ -9,6 +9,7 @@ float controladorPID::computar(float setpoint, float current){
     float error = setpoint - current;
     integral = integral + error * 0.003; // Ts = 3ms (tiempo de muestreo)
     integral = 0.0;
+    //Reparar controlador PID
     float output = kp*(error + ((1/ki)*integral) + (kd*(error-prevError)/0.003));
     prevError = error;
     if(output < 0.0){output = 0;}
