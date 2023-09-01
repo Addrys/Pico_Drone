@@ -108,4 +108,33 @@ CMakeFiles/mpu_pid_pwm.dir/main.cpp.obj: \
  /usr/include/newlib/c++/12.2.1/tr1/poly_laguerre.tcc \
  /usr/include/newlib/c++/12.2.1/tr1/riemann_zeta.tcc \
  /usr/include/newlib/time.h /usr/include/newlib/machine/time.h \
- /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.h
+ /home/adrian/pico/ProyectoDron/MPU_PID_PWM/pid.h \
+ /usr/include/newlib/c++/12.2.1/queue \
+ /usr/include/newlib/c++/12.2.1/deque \
+ /usr/include/newlib/c++/12.2.1/bits/allocator.h \
+ /usr/include/newlib/c++/12.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++allocator.h \
+ /usr/include/newlib/c++/12.2.1/bits/new_allocator.h \
+ /usr/include/newlib/c++/12.2.1/new \
+ /usr/include/newlib/c++/12.2.1/bits/exception.h \
+ /usr/include/newlib/c++/12.2.1/bits/memoryfwd.h \
+ /usr/include/newlib/c++/12.2.1/bits/stl_construct.h \
+ /usr/include/newlib/c++/12.2.1/bits/stl_uninitialized.h \
+ /usr/include/newlib/c++/12.2.1/ext/alloc_traits.h \
+ /usr/include/newlib/c++/12.2.1/bits/alloc_traits.h \
+ /usr/include/newlib/c++/12.2.1/bits/stl_deque.h \
+ /usr/include/newlib/c++/12.2.1/initializer_list \
+ /usr/include/newlib/c++/12.2.1/bits/refwrap.h \
+ /usr/include/newlib/c++/12.2.1/bits/invoke.h \
+ /usr/include/newlib/c++/12.2.1/bits/stl_function.h \
+ /usr/include/newlib/c++/12.2.1/backward/binders.h \
+ /usr/include/newlib/c++/12.2.1/bits/range_access.h \
+ /usr/include/newlib/c++/12.2.1/bits/deque.tcc \
+ /usr/include/newlib/c++/12.2.1/vector \
+ /usr/include/newlib/c++/12.2.1/bits/stl_vector.h \
+ /usr/include/newlib/c++/12.2.1/bits/stl_bvector.h \
+ /usr/include/newlib/c++/12.2.1/bits/functional_hash.h \
+ /usr/include/newlib/c++/12.2.1/bits/hash_bytes.h \
+ /usr/include/newlib/c++/12.2.1/bits/vector.tcc \
+ /usr/include/newlib/c++/12.2.1/bits/stl_heap.h \
+ /usr/include/newlib/c++/12.2.1/bits/stl_queue.h \
+ /usr/include/newlib/c++/12.2.1/bits/uses_allocator.h

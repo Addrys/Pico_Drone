@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "pico/stdlib.h"
+#include <queue>
 
 class controladorPID {
 public:
@@ -14,6 +15,9 @@ private:
     float kp, ki, kd, polaridad;
     float prevError;
     float integral;
+    std::queue<float> buffer_integrador;
+    uint8_t integrador_size;
+    
 };
 
 #endif // PID_H

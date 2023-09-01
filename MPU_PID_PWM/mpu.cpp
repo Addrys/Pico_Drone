@@ -184,8 +184,8 @@ void mpu6050_run(){
     adc_gpio_init(26);
 
     //Ajustamos los coeficientes del controlador PID
-    float kp = 0.9;
-    float ki = 0.006; //0.1
+    float kp = 0.8;
+    float ki = 0.003; //0.1
     float kd = 0.0015; //1.0
     //creamos los controladores
     controladorPID pidMotor1_roll(kp,ki,kd,true);
@@ -323,10 +323,10 @@ void mpu6050_run(){
 
             //us_deseados = 100 + (valor);
             
-            us_m1 = us_deseados + (ctrlM1*10);
-            us_m2 = us_deseados + (ctrlM2*10);
-            us_m3 = us_deseados + (ctrlM3*10);
-            us_m4 = us_deseados + (ctrlM4*10);
+            us_m1 = us_deseados + (ctrlM1);
+            us_m2 = us_deseados + (ctrlM2);
+            us_m3 = us_deseados + (ctrlM3);
+            us_m4 = us_deseados + (ctrlM4);
 
             /*
             level_m1 = (us_deseados);
@@ -335,27 +335,30 @@ void mpu6050_run(){
             level_m2 = (1000*ms_m2);
             level_m3 = (1000*ms_m3);
             level_m4 = (1000*ms_m4);*/
-            if(us_m1 < 0 || us_m1 > 3000){
+            if(us_m1 < 0 || us_m1 > 2000){
                 us_m1 = 0;
             }
-            if(us_m2 < 0 || us_m2 > 3000){
+            if(us_m2 < 0 || us_m2 > 2000){
                 us_m2 = 0;
             }
-            if(us_m3 < 0 || us_m3 > 3000){
+            if(us_m3 < 0 || us_m3 > 2000){
                 us_m3 = 0;
             }
-            if(us_m4 < 0 || us_m4 > 3000){
+            if(us_m4 < 0 || us_m4 > 2000){
                 us_m4 = 0;
             }
-            
-
-            
-
             
             //printf("\n%f\n",us_deseados);
             if(us_m1 < 2000 && us_m1 > -2000){
                 //printf("\n%d %d \n %d %d \n", us_m1,us_m2,us_m3,us_m4);
                 //printf("\n valor: %d", us_m1);
+                /*
+                if(us_m1 < 1000){us_m1 = 1000;}
+                if(us_m2 < 1000){us_m2 = 1000;}
+                if(us_m3 < 1000){us_m3 = 1000;}
+                if(us_m4 < 1000){us_m4 = 1000;}
+                */
+               //printf("\n\t\tAcelerador: %d", us_m1);
                 pwm_motor1.controlar(us_m1);
                 pwm_motor2.controlar(us_m2);
                 pwm_motor3.controlar(us_m3);
