@@ -2625,9 +2625,9 @@ Discarded input sections
  .debug_frame   0x00000000      0x118 CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
- .text          0x00000000        0x0 /tmp/ccanWR9j.o
- .data          0x00000000        0x0 /tmp/ccanWR9j.o
- .bss           0x00000000        0x0 /tmp/ccanWR9j.o
+ .text          0x00000000        0x0 /tmp/ccwTbA2G.o
+ .data          0x00000000        0x0 /tmp/ccwTbA2G.o
+ .bss           0x00000000        0x0 /tmp/ccwTbA2G.o
  .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a(functexcept.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a(functexcept.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a(functexcept.o)
@@ -6772,7 +6772,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/ccanWR9j.o
+ .boot2         0x10000000      0x100 /tmp/ccwTbA2G.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -9215,7 +9215,7 @@ LOAD CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardwar
 LOAD CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
 LOAD CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 LOAD CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-LOAD /tmp/ccanWR9j.o
+LOAD /tmp/ccwTbA2G.o
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -9344,7 +9344,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000008b4       0x2c CMakeFiles/mpu_pid_pwm.dir/home/adrian/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x000008e0       0x22 /tmp/ccanWR9j.o
+                0x000008e0       0x22 /tmp/ccwTbA2G.o
  .ARM.attributes
                 0x00000902       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a(functexcept.o)
  .ARM.attributes
