@@ -16,6 +16,10 @@
 static int addr = 0x68;
 int write_block,read_block = 0;
 
+#define ACCEL_SENSITIVITY 16384.0  // Sensibilidad del acelerómetro en LSB/g
+#define GYRO_SENSITIVITY 131.0   
+
+
 //para medir tiempos 
 volatile uint32_t actual = 0, pasado = 0, tiempo_pasado;
 
@@ -253,37 +257,28 @@ void mpu6050_run(){
         
         mpu6050_read_raw(acceleration, gyro, &temp);
         //mostrar_offsets();
+        
         ax = acceleration[0]; ay = acceleration[1]; az = acceleration[2];
         gx = gyro[0]; gy = gyro[1]; 
-        tiempo_actual = time_us_32();
-        dt = (float)(tiempo_actual - tiempo_previo)/1000000;
-        tiempo_previo = tiempo_actual; //Actualizamos el tiempo previo tras el calculo de dT
-        //Calculamos los ángulos con el acelerometro
+        
+         clock_t tiempo_actual = clock();
+        dt = (float)(tiempo_actual - tiempo_previo) / CLOCKS_PER_SEC;
+        tiempo_previo = tiempo_actual;
 
-        accel_ang_x = 0.0;
-        if(sqrt((pow(ax,2) + pow(az,2))) != 0){   //compruebo division por 0
-            accel_ang_x = atan(ay/sqrt(pow(ax,2) + pow(az,2)))*(180.0/3.14);
-        }else{
-            printf("Division por 0 en accel X\n");
+        // Calcula los ángulos con el acelerómetro
+        float accel_magnitude = sqrt(ax * ax + ay * ay + az * az);
+        if (accel_magnitude != 0) {
+            accel_ang_x = atan2(ay, az) * (180.0 / M_PI);
+            accel_ang_y = atan2(-ax, sqrt(ay * ay + az * az)) * (180.0 / M_PI);
+        } else {
+            printf("División por cero en el cálculo del ángulo con el acelerómetro\n");
         }
-        accel_ang_y = 0.0;
 
-        if(sqrt((pow(ay,2) + pow(az,2))) != 0){
-            accel_ang_y = atan(-ax/sqrt(pow(ay,2) + pow(az,2)))*(180.0/3.14);
-        }else{
-            printf("Division por 0 en accel Y\n");
-        }
-        
-        
-        //Calculamos angulo de rotacion con giroscopio y filtro complemento
-        ang_x = 0.98 * (ang_x_prev + (gx/131) * dt ) + 0.02 * accel_ang_x;
-        ang_y = 0.98 * (ang_y_prev + (gy/131) * dt ) + 0.02 * accel_ang_y;
-        
-        ang_x_prev=ang_x;
-        ang_y_prev=ang_y;
+        // Calcula el ángulo de rotación con el giroscopio y filtro complementario
+        ang_x = 0.98 * (ang_x + (gx / GYRO_SENSITIVITY) * dt) + 0.02 * accel_ang_x;
+        ang_y = 0.98 * (ang_y + (gy / GYRO_SENSITIVITY) * dt) + 0.02 * accel_ang_y;
 
-        
-       //printf("%f,%f\n",ang_x,ang_y);
+        printf("%f, %f\n", ang_x, ang_y);
        
        //Calculamos las señales de control para cada motor diferenciando entre roll y pitch
        
@@ -305,7 +300,7 @@ void mpu6050_run(){
             ctrlM4_pitch = pidMotor4_pitch.computar(0, ang_y);
             ctrlM4 = (ctrlM4_roll + ctrlM4_pitch)/2;
            
-           printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1,ctrlM2,ctrlM3,ctrlM4);
+          // printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1,ctrlM2,ctrlM3,ctrlM4);
             
 
             uint16_t raw_value = adc_read();
