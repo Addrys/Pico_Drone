@@ -15,3 +15,8 @@ pwm en ESC: https://ardupilot.org/copter/docs/common-brushless-escs.html
 #Reparacion del motor 3
 ![Reparacion_M3](https://github.com/Addrys/ProyectoDrone/assets/93978561/81a4b155-ede7-4746-b9c9-45762e3086c7)
 
+#BLheliSuiteSilab
+![Uploading BLHeliSuiteSiLabs ESC Setup_230818_1.png…]()
+
+# Montaje 
+![Uploading integracion raspberry en drone.jpg…]()
