@@ -10,9 +10,11 @@ class controladorPID {
 public:
     controladorPID(float kp, float ki, float kd, bool polaridad);
     float computar(float setpoint, float current);
+    void reiniciar_integrador();
 
 private:
-    float kp, ki, kd, polaridad;
+    float kp, ki, kd;
+    bool polaridad;
     float prevError;
     float integral;
     std::queue<float> buffer_integrador;

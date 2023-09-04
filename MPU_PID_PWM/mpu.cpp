@@ -144,7 +144,7 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp) {
     val = 0x43;
     write_block = i2c_write_blocking(i2c_default, addr, &val, 1, true);
     read_block = i2c_read_blocking(i2c_default, addr, buffer, 6, false);  // False - finished with bus
-        //--------------------------------------
+        //----------0----------------------------
         /*
             printf ("\n");
     printf("w/b: ");
@@ -188,9 +188,9 @@ void mpu6050_run(){
     adc_gpio_init(26);
 
     //Ajustamos los coeficientes del controlador PID
-    float kp = 0.1;
-    float ki = 0.003; //0.1
-    float kd = 0.002; //1.0
+    float kp = 6; //0.08
+    float ki = 0.0; //0.003
+    float kd = 0.6; //1.0 0.06
     //creamos los controladores
     controladorPID pidMotor1_roll(kp,ki,kd,true);
     controladorPID pidMotor2_roll(kp,ki,kd,true);//Roll + para M2
@@ -212,7 +212,6 @@ void mpu6050_run(){
     pwm_motor3.inicializar();
     pwm_motor4.inicializar();
     
-
     volatile float ctrlM1_roll, ctrlM2_roll, ctrlM3_roll, ctrlM4_roll;
     volatile float ctrlM1_pitch, ctrlM2_pitch, ctrlM3_pitch, ctrlM4_pitch;
     volatile float ctrlM1, ctrlM2, ctrlM3, ctrlM4; //aqui sumaremos el roll y pitch
@@ -252,6 +251,8 @@ void mpu6050_run(){
     uint16_t valor = 0;
     float us_deseados;
 
+    bool reiniciado = false;
+
     uint16_t level = 480, us_m1, us_m2, us_m3, us_m4;
     while (1) {
         
@@ -278,12 +279,25 @@ void mpu6050_run(){
         ang_x = 0.98 * (ang_x + (gx / GYRO_SENSITIVITY) * dt) + 0.02 * accel_ang_x;
         ang_y = 0.98 * (ang_y + (gy / GYRO_SENSITIVITY) * dt) + 0.02 * accel_ang_y;
 
-        //printf("%f, %f\n", ang_x, ang_y);
+        printf("RollX: %f, PitchY: %f\n", ang_x, ang_y);
        
        //Calculamos las señales de control para cada motor diferenciando entre roll y pitch
        
-        if(!isinf(ang_x) && !isinf(ang_y)){
-            
+        if(ang_x > -90.0 && ang_x < 90.0){
+            printf("\n-------------------------\n");
+            if(!reiniciado){
+                printf("\n Reiniciando integradores\n");
+                reiniciado = true;
+                pidMotor1_roll.reiniciar_integrador();
+                pidMotor2_roll.reiniciar_integrador();
+                pidMotor3_roll.reiniciar_integrador();
+                pidMotor4_roll.reiniciar_integrador();
+
+                pidMotor1_pitch.reiniciar_integrador();
+                pidMotor2_pitch.reiniciar_integrador();
+                pidMotor3_pitch.reiniciar_integrador();
+                pidMotor4_pitch.reiniciar_integrador();
+            }
             ctrlM1_roll = pidMotor1_roll.computar(0,ang_x);
             ctrlM1_pitch = pidMotor1_pitch.computar(0, ang_y);
             ctrlM1 = (ctrlM1_roll + ctrlM1_pitch)/2;
@@ -300,7 +314,7 @@ void mpu6050_run(){
             ctrlM4_pitch = pidMotor4_pitch.computar(0, ang_y);
             ctrlM4 = (ctrlM4_roll + ctrlM4_pitch)/2;
            
-           printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1,ctrlM2,ctrlM3,ctrlM4);
+           //printf("%6.4f %6.4f \n %6.4f %6.4f \n", ctrlM1_roll,ctrlM2_roll,ctrlM3_roll,ctrlM4_roll);
             
 
             uint16_t raw_value = adc_read();
@@ -318,10 +332,10 @@ void mpu6050_run(){
 
             //us_deseados = 100 + (valor);
             
-            us_m1 = us_deseados;// + (ctrlM1);
-            us_m2 = us_deseados;// + (ctrlM2);
-            us_m3 = us_deseados*0.98;// + (ctrlM3);
-            us_m4 = us_deseados;// + (ctrlM4);
+            us_m1 = us_deseados + ctrlM1;// + (ctrlM1);
+            us_m2 = us_deseados + ctrlM2;// + (ctrlM2);
+            us_m3 = us_deseados + ctrlM3;// + (ctrlM3);
+            us_m4 = us_deseados + ctrlM4;// + (ctrlM4);
 
             /*
             level_m1 = (us_deseados);
@@ -331,21 +345,21 @@ void mpu6050_run(){
             level_m3 = (1000*ms_m3);
             level_m4 = (1000*ms_m4);*/
             if(us_m1 < 0 || us_m1 > 2000){
-                us_m1 = 0;
+                us_m1 = 1000;
             }
             if(us_m2 < 0 || us_m2 > 2000){
-                us_m2 = 0;
+                us_m2 = 1000;
             }
             if(us_m3 < 0 || us_m3 > 2000){
-                us_m3 = 0;
+                us_m3 = 1000;
             }
             if(us_m4 < 0 || us_m4 > 2000){
-                us_m4 = 0;
+                us_m4 = 1000;
             }
             
             //printf("\n%f\n",us_deseados);
-            if(us_m1 < 2000 && us_m1 > -2000){
-              //  printf("\n%d %d \n %d %d \n", us_m1,us_m2,us_m3,us_m4);
+           // if(us_m1 < 2000 && us_m1 > -2000){
+                printf("\n%d %d \n %d %d \n", us_m1,us_m2,us_m3,us_m4);
                 //printf("\n valor: %d", us_m1);
                 /*
                 if(us_m1 < 1000){us_m1 = 1000;}
@@ -354,6 +368,14 @@ void mpu6050_run(){
                 if(us_m4 < 1000){us_m4 = 1000;}
                 */
                //printf("\n\t\tAcelerador: %d", us_m1);
+               if(us_deseados >= 1800){
+                pwm_motor1.controlar(1000);
+                pwm_motor2.controlar(1000);
+                pwm_motor3.controlar(1000);
+                pwm_motor4.controlar(1000);
+                break;
+
+               }
                 pwm_motor1.controlar(us_m1);
                 pwm_motor2.controlar(us_m2);
                 pwm_motor3.controlar(us_m3);
@@ -362,15 +384,16 @@ void mpu6050_run(){
                // tiempo_pasado = actual - pasado;
               //  printf("Tiempo desde el último pulso: %u microsegundos\n", tiempo_pasado);
                 //pasado = actual;
-            }else{
-                printf("%f Calculando...\n", us_m1);
-            }
+           // }else{
+            //    printf("%f Calculando...\n", us_m1);
+            //}
         
         }else{
-            printf("INFINITO: pitch(X): %f, roll(y): %f\n",ang_x,ang_y);
+            printf("calculando: pitch(X): %f, roll(y): %f\n",ang_x,ang_y);
         }
         
         
         //sleep_ms(1); //Lo ideal seria esperar a la interrupcion de la MPU
     }
+    printf("\nPrograma abortado, por límite acelerador de seguridad");
 }
