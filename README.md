@@ -20,3 +20,6 @@ pwm en ESC: https://ardupilot.org/copter/docs/common-brushless-escs.html
 
 # Montaje 
 ![Uploading integracion raspberry en drone.jpg…]()
+
+#Pruebas de PID
+![soporte](https://github.com/Addrys/ProyectoDrone/assets/93978561/86fcc629-b530-43ae-8e92-b317c543f1ac)
